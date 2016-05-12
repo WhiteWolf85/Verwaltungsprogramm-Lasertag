@@ -1,0 +1,86 @@
+
+Programmieren 2 (INF)
+Sommersemester 2016
+
+
+
+Studienprojekt
+Spezifikation
+
+
+
+Projekt: Verwaltungsprogramm Lasertag
+
+Team:
+
+Franz Fischer           franzfischer1985@gmail.com
+Thomas Randl            thomasrandl@web.de
+Anastasia Albrecht      Anastasia.kb.albrecht@gmx.de
+Tobias Lautenschlager   tobias@extnet.de
+
+
+
+Inhalt
+1.	Kurzbeschreibung	            2
+2.	Anforderungen	                2
+3.	UML Klassendiagramm	            2
+4.	Graphical User Interface (GUI)	2
+5.	Funktionalität	                2
+6.	Benötigte Werkezuge	            3
+7.	Aufgabeneinteilung	            3
+
+
+1. Kurzbeschreibung
+
+Das Verwaltungsprogramm Lasertag ist eine einfache Desktopanwendung, mit der es möglich ist, einen Gesamtüberblick über die
+Teams in der German Lasertag League zu erhalten, sowie auf Einzelspielerstatistiken zuzugreifen und den Zustand des Equipments
+zu überprüfen.
+
+
+2. Anforderungen
+
+Das Programm ist eine einfache Desktop-Anwendung
+Das Programm ermöglicht
+das Einlesen von Spieler- und Teamdaten
+einen Einblick auf den Zustand der Westen zu erhalten (Akkustand, Status)
+Allgemeine Team- und Spielerstatistiken
+
+
+3. UML Klassendiagramm
+
+Zeichnen Sie ein UML Klassendiagramm. Handschriftliche, eingescannte Skizzen sind erlaubt. Die Klassenstruktur muss noch nicht
+endgültig sein und kann während der Implementierung natürlich angepasst werden.
+Der Schwerpunkt liegt nicht auf einer perfekten UML Syntax, sondern, dass Sie sich Gedanken bzgl. einer sinnvoll Strukturierung
+Ihrer Software machen.
+
+
+4. Graphical User Interface (GUI)
+
+Skizzieren Sie hier graphisch, wie Sie sich Ihre graphische Oberfläche vorstellen. Auch hier ist eine handschriftliche Skizze erlaubt.
+
+
+5. Funktionalität
+
+Startseite:	Dient als Menü um auf die 4 Klassen zuzugreifen.
+Spieler: 	Allgemeine Infos zum Spieler (Name, Alter, Nickname), sowie Anzahl gespielte Spiele, Ratio (Hits/Hits By) und im
+            Spiel erzielter Score. Gibt Daten an Team und Rangliste weiter.
+Team:		Allgemeine Infos zum Team (Teamname und Mitglieder), Gesamtscore des Teams, Anzahl Spieler im Team. Gibt Daten an
+            Rangliste weiter.
+Weste: 	    Gibt Akkustand anhand der gespielten Spiele und abgegebenen Markierungen an. Weste erkennt, wie oft sie markiert wurde,
+            bzw. markiert. Lässt Eingabe einer Statusänderung (Reparatur, Aufladung) zu. Gibt Score an Spieler weiter.
+Rangliste:	Stellt Rangliste der Teams nach Punkten dar. Durch Klick auf das entsprechende Team werden die Teammitglieder nach
+            Punkten angezeigt.
+
+
+6. Benötigte Werkzeuge
+
+JavaFX, Scenebuilder, Github und IntelliJ
+
+
+7. Aufgabeneinteilung
+
+Franz Fischer 			Klasse: Rangliste + Testumgebung
+Thomas Randl		    Klasse: Team + Testumgebung
+Anastasia Albrecht		Klasse: Weste + Testumgebung
+Tobias Lautenschlager	Klasse: Spieler + Testumgebung
+Gemeinsam:			    Klasse: Startseite, Backend, GUI
