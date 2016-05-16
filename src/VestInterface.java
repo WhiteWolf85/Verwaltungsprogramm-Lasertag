@@ -4,7 +4,11 @@
 interface VestInterface {
 
     String status();
+
     float ratio();
+
     int score();
+
     float batteryCharge();
+    
 }
