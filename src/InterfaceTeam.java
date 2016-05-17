@@ -3,18 +3,18 @@
  */
 interface InterfaceTeam {
 
+
     //Methoden
     double sumScore(Spieler spieler);
     int gamesPlayed(Team team);
     String toString();
     void teamImage();
 
-    //Getter
+    //Getter & Setter
     String getTeamName();
     int getTeamScore();
     int getGameCounter();
 
-    //Setter
     void setTeamName(String teamName);
 }
 
