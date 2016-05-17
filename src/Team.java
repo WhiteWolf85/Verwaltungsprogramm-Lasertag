@@ -15,7 +15,6 @@ public class Team {
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
     Spieler[] spieler = new Spieler();
 
-    //Konstruktor
     //Im Konstruktor wird der Name des Teams eingelesen?
     public void Team() {
         Scanner scanner = new Scanner(System.in);
