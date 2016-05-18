@@ -1,27 +1,32 @@
 /**
  * Created by anna on 16.05.16.
  */
+import java.util.Scanner;
+
 public class Vest implements VestInterface {
 
-    public String status(){
+    private int vestNumber;
+
+    public Vest (int i) {
+        i = vestNumber;
+    }
+
+    public void status() {
         String status;
-        return "OK";
     }
 
     public float ratio(){
         int hits, hitsby;
         float ratio;
-        hits = 5;
-        hitsby = 3;
         ratio = hits * 100 / (hits + hitsby);
         return ratio;
     }
 
     public int score(){
-        int score, hits, hitsby;
-        hits= 5;
-        hitsby = 3;
-        score = hits - hitsby;
+        int score, posScore, negScore, hits, hitsby;
+        posScore= hits * 5;
+        negScore = hitsby * 3;
+        score = posScore - negScore;
         return score;
     }
 

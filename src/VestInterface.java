@@ -3,7 +3,7 @@
  */
 interface VestInterface {
 
-    String status();
+    void status();
 
     float ratio();
 
