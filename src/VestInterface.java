@@ -3,12 +3,27 @@
  */
 interface VestInterface {
 
-    void status();
 
-    float ratio();
+    int getVestNumber();
 
-    int score();
+    float getRatio();
 
-    float batteryCharge();
-    
+    int getScore();
+
+    float getBatteryCharge();
+
+    int getHits();
+
+    int getHitsby();
+
+    void setVestNumber(int vestId);
+
+    void setRatio(float vestRatio);
+
+    void setBatteryCharge(float battery);
+
+    void setHits(int dealtHits);
+
+    void setHitsby(int receivedHits);
+
 }

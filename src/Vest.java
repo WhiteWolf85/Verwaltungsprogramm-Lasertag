@@ -1,42 +1,67 @@
 /**
  * Created by anna on 16.05.16.
  */
-import java.util.Scanner;
 
 public class Vest implements VestInterface {
 
     private int vestNumber;
+    private float ratio;
+    private int score;
+    private float batteryCharge;
+    private int hits;
+    private int hitsby;
+    private static final float maxBattery = (float) 8.0;
+    private static final float minBattery = (float) 5.0;
 
-    public Vest (int i) {
-        i = vestNumber;
+
+    public int getVestNumber() {
+        return this.vestNumber;
+    }
+    public float getRatio() {
+        return this.ratio;
+    }
+    public int getScore() {
+        return this.score;
+    }
+    public float getBatteryCharge() {
+        return this.batteryCharge;
+    }
+    public int getHits() {
+        return this.hits;
+    }
+    public int getHitsby() {
+        return this.hitsby;
     }
 
-    public void status() {
-        String status;
+
+
+    public void setVestNumber(int vestId) {
+        this.vestNumber = vestId;
+    }
+    public void setRatio(float vestRatio) {
+        this.ratio = vestRatio;
+    }
+//kein setScore, da nur lesbar, nicht veränderbar
+    public void setBatteryCharge(float battery) {
+        this.batteryCharge = battery;
+    }
+    public void setHits(int dealtHits) {
+        this.hits = dealtHits;
+    }
+    public void setHitsby(int receivedHits) {
+        this.hitsby = receivedHits;
     }
 
-    public float ratio(){
-        int hits, hitsby;
-        float ratio;
-        ratio = hits * 100 / (hits + hitsby);
-        return ratio;
+
+
+
+    //kommen später in main!
+    public void calculateScore () {
+        this.score = (this.hits * 5) - (this.hitsby * 3);
     }
 
-    public int score(){
-        int score, posScore, negScore, hits, hitsby;
-        posScore= hits * 5;
-        negScore = hitsby * 3;
-        score = posScore - negScore;
-        return score;
+    public void calculateRatio () {
+        this.ratio = (float) this.hits * 100 / (float) (this.hits + this.hitsby);
     }
-
-    public float batteryCharge(){
-        float maxBattery, minBattery, batteryCharge;
-        maxBattery = (float) 8.0;
-        minBattery = (float) 5.0;
-        batteryCharge = maxBattery;
-        return batteryCharge;
-    }
-
 
 }
