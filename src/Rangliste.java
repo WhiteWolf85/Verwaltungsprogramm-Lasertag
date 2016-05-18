@@ -3,22 +3,22 @@
  */
 public class Rangliste implements RanglisteInterface {
     @Override
-    public void addPlayer() {
+    public void addPlayer(Spieler player) {
 
     }
 
     @Override
-    public void addTeam() {
+    public void addTeam(Team team) {
 
     }
 
     @Override
-    public Rangliste sortList() {
+    public Rangliste sortList(int way) {
         return null;
     }
 
     @Override
-    public Rangliste getListing() {
+    public Rangliste getListing(int way) {
         return null;
     }
 }

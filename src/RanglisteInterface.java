@@ -6,7 +6,7 @@
 public interface RanglisteInterface {
 
 
-void addPlayer(Player player);
+void addPlayer(Spieler player);
 void addTeam(Team team);
 Rangliste sortList(int way);
 Rangliste getListing(int way);
