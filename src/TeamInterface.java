@@ -1,7 +1,7 @@
 /**
  * Created by Thomas Laptop on 13.05.2016.
  */
-interface InterfaceTeam {
+interface TeamInterface {
 
 
     //Methoden
