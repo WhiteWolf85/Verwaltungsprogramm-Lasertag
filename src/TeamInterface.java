@@ -3,9 +3,10 @@
  */
 interface TeamInterface {
 
-
     //Methoden
     double sumScore(Spieler spieler);
+    void addTeam(Team team);
+    void removeTeam(Team team);
     int gamesPlayed(Team team);
     String toString();
     void teamImage();

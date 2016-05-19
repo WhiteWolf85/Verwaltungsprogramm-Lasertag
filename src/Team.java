@@ -13,12 +13,11 @@ public class Team {
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
-    Spieler[] spieler = new Spieler();
+    Spieler[] spieler;
 
     //Im Konstruktor wird der Name des Teams eingelesen?
-    public void Team() {
-        Scanner scanner = new Scanner(System.in);
-        this.teamName = scanner.next(); //this.teamName = teamName;
+    public void Team(String teamName) {
+        this.teamName = teamName;
         this.teamScore = 0;
         this.gameCounter = 0;
     }
@@ -29,6 +28,14 @@ public class Team {
         return "Team: " + teamName + "\n" +
                 "Score: " + teamScore + "\n" +
                 "Games played: " + gameCounter;
+    }
+
+    public void addTeam(Team team){
+
+    }
+
+    public void removeTeam(Team team){
+
     }
 
     public double sumScore(Spieler[] s) {
