@@ -10,16 +10,22 @@ public class Team {
     private String teamName;
     private double teamScore;
     private int gameCounter;
+    private int teamMember;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
     Spieler[] spieler;
+
+
+    //Team für Spieler ohne Team
+    Team teamlos;
 
     //Im Konstruktor wird der Name des Teams eingelesen?
     public void Team(String teamName) {
         this.teamName = teamName;
         this.teamScore = 0;
         this.gameCounter = 0;
+        this.teamMember = 0;
     }
 
     //toString Methode, um die Attribute mit Wert anzuzeigen
@@ -35,6 +41,15 @@ public class Team {
     }
 
     public void removeTeam(Team team){
+        for(int i =0;i<teamMember;i++){
+            team.spieler[i] = teamlos.spieler[i];
+        }
+        if(team.teamMember == 0){
+            team = null;
+        }
+    }
+
+    public void addToTeam(Spieler spieler){
 
     }
 
@@ -64,6 +79,10 @@ public class Team {
 
     public int getGameCounter() {
         return this.gameCounter;
+    }
+
+    public int getTeamMember(){
+        return this.teamMember;
     }
 
 
