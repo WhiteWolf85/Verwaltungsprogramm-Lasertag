@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Created by Thomas Laptop on 12.05.2016.
  */
 
-public class Team {
+public class Team implements TeamInterface {
 
     //Attribute
     private String teamName;

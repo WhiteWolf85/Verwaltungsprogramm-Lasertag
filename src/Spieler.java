@@ -6,7 +6,7 @@ public class Spieler implements SpielerInterface {
         private String name;
         private int age;
         private String nickName;
-        private String team;
+        private Team team;
         private int gameCounter = 0;
         private String role;
         private String status;
@@ -17,7 +17,7 @@ public class Spieler implements SpielerInterface {
 
 
     //Constructor
-    public Spieler(String name, int age, String nickName, String team, String role, String status){
+    public Spieler(String name, int age, String nickName, Team team, String role, String status){
         this.name = name;
         this.age = age;
         this.nickName = nickName;
