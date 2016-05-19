@@ -4,7 +4,7 @@
 public interface SpielerInterface {
 
      void Spieler(String name, int age, String nickName, Team team, String role, String status);
-     void insertScore(int dH, int rH);
+     void updateScore(int dH, int rH);
      long getScore();
      double getRatio();
      int getGames();
