@@ -10,5 +10,7 @@ void addPlayer(Spieler player);
 void addTeam(Team team);
 Rangliste sortList(int way);
 Rangliste getListing(int way);
+    Rangliste[] RANGLISTE(Team team, int way);
+    Rangliste RANGLISTE(Team[] teams);
 
 }
