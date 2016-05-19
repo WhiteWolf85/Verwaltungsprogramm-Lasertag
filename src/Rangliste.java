@@ -64,5 +64,32 @@ public class Rangliste implements RanglisteInterface {
         return this.teamList;
     }
 
+    @Override
+    public Spieler[] getAllPlayers(Team[] teams){
+        return getAllPlayers(teams,0);
+    }
+
+    @Override
+    public Spieler[] getAllPlayers(Team[] teams,int way){
+        for(int i=0;i<teams.length;i++){
+            for(int a=0;a<teams[i].spieler.length;a++) {
+                this.scores[i] = teams[i].spieler[a].getScore();
+            }
+        }
+        if(way==0){
+            Arrays.sort(this.scores);
+        }else{
+            //Arrays.sort(this.scores, Collections.reverseOrder());
+        }
+
+        for(int i=0;i<teams.length;i++){
+            for(int a=0;a<this.scores.length;i++) {
+                if (teams[i].getTeamScore() == this.scores[a]) {
+                    this.teamList[i] = teams[i];
+                }
+            }
+        }
+        return this.playerList;
+    }
 
 }

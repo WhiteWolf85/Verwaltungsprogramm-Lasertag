@@ -6,9 +6,11 @@
 public interface RanglisteInterface {
 
 
-    Spieler[] getList(Team team, int way);
-    Spieler[] getList(Team team);
-    Team[] getList(Team[] teams, int way);
-    Team[] getList(Team[] teams);
+    public Spieler[] getList(Team team, int way);
+    public Spieler[] getList(Team team);
+    public Team[] getList(Team[] teams, int way);
+    public Team[] getList(Team[] teams);
+    public Spieler[] getAllPlayers(Team[] teams,int way);
+    public Spieler[] getAllPlayers(Team[] teams);
 
 }
