@@ -6,9 +6,11 @@
 public interface RanglisteInterface {
 
 
-void addPlayer(Spieler player);
-void addTeam(Team team);
-Rangliste sortList(int way);
-Rangliste getListing(int way);
+    public Spieler[] getList(Team team, int way);
+    public Spieler[] getList(Team team);
+    public Team[] getList(Team[] teams, int way);
+    public Team[] getList(Team[] teams);
+    public Spieler[] getAllPlayers(Team[] teams,int way);
+    public Spieler[] getAllPlayers(Team[] teams);
 
 }
