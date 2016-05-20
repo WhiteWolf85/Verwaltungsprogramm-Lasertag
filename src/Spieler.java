@@ -13,8 +13,8 @@ public class Spieler implements SpielerInterface {
         public String role;
         public String status;
         public long score;
-        public int Hits;
-        public int HitsBy;
+        public int hits;
+        public int hitsBy;
         public double ratio;
         public Spieler spieler;
 
@@ -37,9 +37,9 @@ public class Spieler implements SpielerInterface {
 
     public void updateScore(int H, int HB){    //Hits, HitsBy
         score = H * 5 - HB * 3;
-        this.Hits = Hits + H;        //dealtHits are Hits overall, not just one game
-        this.HitsBy = HitsBy + HB;  //same for receivedHits
-        ratio = (double) this.Hits / this.HitsBy;  //calculates new ratio
+        this.hits = hits + H;        //dealtHits are Hits overall, not just one game
+        this.hitsBy = hitsBy + HB;  //same for receivedHits
+        ratio = (double) this.hits / this.hitsBy;  //calculates new ratio
         gameCounter ++;
     }
 
