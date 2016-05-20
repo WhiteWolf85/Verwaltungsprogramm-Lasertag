@@ -16,6 +16,8 @@ interface VestInterface {
 
     int getHitsby();
 
+    String getStatus ();
+
     void setVestNumber(int vestId);
 
     void setRatio(float vestRatio);
@@ -25,5 +27,8 @@ interface VestInterface {
     void setHits(int dealtHits);
 
     void setHitsby(int receivedHits);
+
+    void setStatus (String status);
+
 
 }

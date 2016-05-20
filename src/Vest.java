@@ -12,6 +12,7 @@ public class Vest implements VestInterface {
     private int hitsby;
     private static final float maxBattery = (float) 8.0;
     private static final float minBattery = (float) 5.0;
+    private String status;
 
 
     public int getVestNumber() {
@@ -32,7 +33,7 @@ public class Vest implements VestInterface {
     public int getHitsby() {
         return this.hitsby;
     }
-
+    public String getStatus() {return this.status;}
 
 
     public void setVestNumber(int vestId) {
@@ -41,7 +42,7 @@ public class Vest implements VestInterface {
     public void setRatio(float vestRatio) {
         this.ratio = vestRatio;
     }
-//kein setScore, da nur lesbar, nicht veränderbar
+    //kein setScore, da nur lesbar, nicht veränderbar
     public void setBatteryCharge(float battery) {
         this.batteryCharge = battery;
     }
@@ -51,7 +52,7 @@ public class Vest implements VestInterface {
     public void setHitsby(int receivedHits) {
         this.hitsby = receivedHits;
     }
-
+    public void setStatus(String status) { this.status = status;  }
 
 
 
