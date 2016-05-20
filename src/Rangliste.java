@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.Arrays;
 
 /**
@@ -17,25 +16,31 @@ public class Rangliste implements RanglisteInterface {
 
     @Override
     public Spieler[] getList(Team team, int way) {
-        //Spieler rangliste[];
+        boolean sort=true;
+        Spieler puffer;
         Spieler[] spieler=team.spieler;
-        for(int i=0;i<spieler.length;i++){
-            this.scores[i]=spieler[i].getScore();
-        }
-        if(way==0){
-            Arrays.sort(this.scores);
-        }else{
-            //Arrays.sort(this.scores, Collections.reverseOrder());
-        }
-
-        for(int i=0;i<spieler.length;i++){
-            for(int a=0;a<this.scores.length;i++) {
-                if (spieler[i].getScore() == this.scores[a]) {
-                    this.playerList[i] = spieler[i];
+        while(sort) {
+            sort=false;
+            for (int i = 0; i < spieler.length-1; i++) {
+                if(way==0) { //von groß nach klein
+                    if (spieler[i].getScore() < spieler[i + 1].getScore()) {
+                        puffer = spieler[i];
+                        spieler[i] = spieler[i + 1];
+                        spieler[i + 1] = puffer;
+                        sort = true;
+                    }
+                }else{ //von klein nach groß
+                    if (spieler[i].getScore() > spieler[i + 1].getScore()) {
+                        puffer = spieler[i];
+                        spieler[i] = spieler[i + 1];
+                        spieler[i + 1] = puffer;
+                        sort = true;
+                    }
                 }
             }
         }
-        return this.playerList;
+
+        return spieler;
     }
 
     @Override
@@ -45,23 +50,30 @@ public class Rangliste implements RanglisteInterface {
 
     @Override
     public Team[] getList(Team[] teams, int way){
-        for(int i=0;i<teams.length;i++){
-            this.scores[i]=teams[i].getTeamScore();
-        }
-        if(way==0){
-            Arrays.sort(this.scores);
-        }else{
-            //Arrays.sort(this.scores, Collections.reverseOrder());
-        }
-
-        for(int i=0;i<teams.length;i++){
-            for(int a=0;a<this.scores.length;i++) {
-                if (teams[i].getTeamScore() == this.scores[a]) {
-                    this.teamList[i] = teams[i];
+        boolean sort=true;
+        Team puffer;
+        while(sort) {
+            sort=false;
+            for (int i = 0; i < teams.length-1; i++) {
+                if(way==0) { //von groß nach klein
+                    if (teams[i].getTeamScore() < teams[i + 1].getTeamScore()) {
+                        puffer = teams[i];
+                        teams[i] = teams[i + 1];
+                        teams[i + 1] = puffer;
+                        sort = true;
+                    }
+                }else{ //von klein nach groß
+                    if (teams[i].getTeamScore() > teams[i + 1].getTeamScore()) {
+                        puffer = teams[i];
+                        teams[i] = teams[i + 1];
+                        teams[i + 1] = puffer;
+                        sort = true;
+                    }
                 }
             }
         }
-        return this.teamList;
+
+        return teams;
     }
 
     @Override
