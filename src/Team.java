@@ -11,6 +11,7 @@ public class Team implements TeamInterface {
     private long teamScore;
     private int gameCounter;
     private int teamMember;
+    private Team team;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
@@ -36,22 +37,26 @@ public class Team implements TeamInterface {
                 "Games played: " + gameCounter;
     }
 
-    public void addTeam(Team team){
-
+    public void addTeam() {
+        Team team = new Team();
+        Scanner scanner = new Scanner(System.in);
+        team.teamName = scanner.nextLine();
+        team.teamImage();
     }
 
-    public void removeTeam(Team team){
-        for(int i =0;i<teamMember;i++){
+    public void removeTeam(Team team) {
+        for (int i = 0; i < teamMember; i++) {
             team.spieler[i] = teamlos.spieler[i];
         }
-        if(team.teamMember == 0){
+        if (team.teamMember == 0) {
             team = null;
         }
     }
 
     //Fügt Spieler an ein Team an
-    public void addToTeam(Spieler spieler){
-
+    public void addToTeam(Spieler spieler, Team team) {
+        team.getSpieler() = spieler; //getSpieler wird noch benötigt
+        team.teamMember++;
     }
 
     public long sumScore(Spieler[] spieler) {
@@ -66,8 +71,8 @@ public class Team implements TeamInterface {
     }
 
     //Anzahl der Gespielten Spiele des jeweiligen Teams
-    public int gamesPlayed(Team t) {
-        return t.gameCounter++;
+    public int gamesPlayed(Team team) {
+        return team.gameCounter++;
     }
 
     public String getTeamName() {
@@ -82,12 +87,20 @@ public class Team implements TeamInterface {
         return this.gameCounter;
     }
 
-    public int getTeamMember(){
+    public int getTeamMember() {
         return this.teamMember;
+    }
+
+    public Team getTeam() {
+        return this.team;
     }
 
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
     }
 }
