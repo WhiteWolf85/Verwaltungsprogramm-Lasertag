@@ -56,7 +56,7 @@ public class Team implements TeamInterface {
     //Fügt Spieler an ein Team an
     public void addToTeam(Spieler spieler, Team team) {
         team.teamMember++;
-        team.spieler[teamMember] = spieler;
+        team.spieler[team.teamMember] = spieler;
     }
 
     public long sumScore(Spieler[] spieler) {
