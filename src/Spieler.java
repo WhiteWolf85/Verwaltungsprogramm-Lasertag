@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Created by Tobi on 12.05.2016.
  */
@@ -14,6 +16,7 @@ public class Spieler implements SpielerInterface {
         public int Hits;
         public int HitsBy;
         public double ratio;
+        public Spieler spieler;
 
 
     //Constructor
@@ -26,6 +29,12 @@ public class Spieler implements SpielerInterface {
         this.status = status;
     }
 
+    public void addSpieler() {
+        Spieler spieler = new Spieler();
+        Scanner scanner = new Scanner(System.in);
+        spieler.name = scanner.nextLine();
+    }
+
     public void updateScore(int H, int HB){    //Hits, HitsBy
         score = H * 5 - HB * 3;
         this.Hits = Hits + H;        //dealtHits are Hits overall, not just one game
@@ -33,8 +42,6 @@ public class Spieler implements SpielerInterface {
         ratio = (double) this.Hits / this.HitsBy;  //calculates new ratio
         gameCounter ++;
     }
-
-    Spieler spieler = new Spieler();
 
     public long getScore(){return score;}
     public double getRatio(){return ratio;}
