@@ -6,7 +6,7 @@ import sun.security.provider.ConfigFile;
 interface TeamInterface {
 
     //Methoden
-    double sumScore(Spieler spieler);
+    long sumScore(Spieler[] spieler);
     void addTeam(Team team);
     void removeTeam(Team team);
     void addToTeam(Spieler spieler);
@@ -16,7 +16,7 @@ interface TeamInterface {
 
     //Getter
     String getTeamName();
-    int getTeamScore();
+    long getTeamScore();
     int getGameCounter();
     int getTeamMember();
 

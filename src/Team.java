@@ -8,7 +8,7 @@ public class Team implements TeamInterface {
 
     //Attribute
     private String teamName;
-    private double teamScore;
+    private long teamScore;
     private int gameCounter;
     private int teamMember;
 
@@ -54,9 +54,9 @@ public class Team implements TeamInterface {
 
     }
 
-    public double sumScore(Spieler[] s) {
+    public long sumScore(Spieler[] spieler) {
         for (int i = 0; i <= 5; i++) {
-            this.teamScore += s[i].getScore();
+            this.teamScore += spieler[i].getScore();
         }
         return this.teamScore;
     }
@@ -74,7 +74,7 @@ public class Team implements TeamInterface {
         return this.teamName;
     }
 
-    public double getTeamScore() {
+    public long getTeamScore() {
         return this.teamScore;
     }
 
