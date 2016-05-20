@@ -49,6 +49,7 @@ public class Team {
         }
     }
 
+    //Fügt Spieler an ein Team an
     public void addToTeam(Spieler spieler){
 
     }

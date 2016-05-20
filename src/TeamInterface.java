@@ -14,12 +14,13 @@ interface TeamInterface {
     String toString();
     void teamImage();
 
-    //Getter & Setter
+    //Getter
     String getTeamName();
     int getTeamScore();
     int getGameCounter();
     int getTeamMember();
 
+    //Setter
     void setTeamName(String teamName);
 }
 
