@@ -3,17 +3,17 @@
  */
 public class Spieler implements SpielerInterface {
 
-        private String name;
-        private int age;
-        private String nickName;
-        private String team;
-        private int gameCounter = 0;
-        private String role;
-        private String status;
-        private long score;
-        private int dealtHits;
-        private int receivedHits;
-        private double ratio;
+        public String name;
+        public int age;
+        public String nickName;
+        public String team;
+        public int gameCounter = 0;
+        public String role;
+        public String status;
+        public long score;
+        public int Hits;
+        public int HitsBy;
+        public double ratio;
 
 
     //Constructor
@@ -26,11 +26,11 @@ public class Spieler implements SpielerInterface {
         this.status = status;
     }
 
-    public void insertScore(int dH, int rH){    //dealt and received hits of lastest game
-        score = dH * 5 - rH * 3;
-        this.dealtHits = dealtHits + dH;        //dealtHits are Hits overall, not just one game
-        this.receivedHits = receivedHits + rH;  //same for receivedHits
-        ratio = (double) this.dealtHits / this.receivedHits;  //calculates new ratio
+    public void insertScore(int H, int HB){    //Hits, HitsBy
+        score = H * 5 - HB * 3;
+        this.Hits = Hits + H;        //dealtHits are Hits overall, not just one game
+        this.HitsBy = HitsBy + HB;  //same for receivedHits
+        ratio = (double) this.Hits / this.HitsBy;  //calculates new ratio
         gameCounter ++;
     }
 
