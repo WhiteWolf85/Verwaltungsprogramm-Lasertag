@@ -15,7 +15,7 @@ public class Spieler implements SpielerInterface {
         public long score;
         public int hits;
         public int hitsBy;
-        public double ratio;
+        public float ratio;
         public Spieler spieler;
 
 
@@ -39,12 +39,12 @@ public class Spieler implements SpielerInterface {
         score = H * 5 - HB * 3;
         this.hits = hits + H;        //dealtHits are Hits overall, not just one game
         this.hitsBy = hitsBy + HB;  //same for receivedHits
-        ratio = (double) this.hits / this.hitsBy;  //calculates new ratio
+        ratio = (float) this.hits / this.hitsBy;  //calculates new ratio
         gameCounter ++;
     }
 
     public long getScore(){return score;}
-    public double getRatio(){return ratio;}
+    public float getRatio(){return ratio;}
     public int getGames() {return gameCounter;}
     public String getRole() {return role;}
     public String getStatus(){return status;}

@@ -7,7 +7,7 @@ public interface SpielerInterface {
      void addSpieler();
      void updateScore(int dH, int rH);
      long getScore();
-     double getRatio();
+     float getRatio();
      int getGames();
      String getRole();
      String getStatus();
