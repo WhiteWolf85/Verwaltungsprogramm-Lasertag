@@ -1,56 +1,36 @@
 /**
  * Created by franz on 20.05.16.
  */
-public class Match {
+public class Match implements MatchInterface{
 
-    private int playedMatches=0;
-    private boolean warning=false;
-    private int voidVestID=0;
-    private int replacementVestID=0;
-    private Vest[] replacementVest;
+    private static int playedMatches;
 
-    void startGame(Vest[] vestCollection){
+    public void startGame(Spieler[] spieler, Vest[] vest){
+        int hits;
+        int hitsBy;
 
-        if(testVestCharge(vestCollection)) {
-            for (int i = 0; i < vestCollection.length; i++) {
-                vestCollection[i].setHits(createNumbers());
-                vestCollection[i].setHitsby(createNumbers());
+        if(spieler.length<=vest.length) {
+            for(int i=0;i<spieler.length;i++) {
+                hits=getResult();
+                hitsBy=getResult();
+                vest[i].setHits(hits);
+                vest[i].setHitsby(hits);
+                spieler[i].updateScore(hits,hitsBy);
             }
             this.playedMatches += 1;
         }
     }
 
-    private boolean testVestCharge(Vest[] vestCollection){
-        for(int i=0; i<vestCollection.length;i++){
-
-            if(vestCollection[i].getBatteryCharge()<10.0){
-                this.voidVestID=vestCollection[i].getVestNumber();
-                warning=true;
-                return false;
-            }
-        }
-        return true;
-    }
-
-    void setReplacementVest(Vest[] vests){
-        this.replacementVest=vests;
-    }
-
-    void combinePlayerWithVest(Spieler spieler, Vest vest){
-        vest.setPlayer=spieler;
-    }
-
-    private int createNumbers(){
+    private int getResult(){
         int zufallszahl;
-        zufallszahl = (int)(Math.random() * 100);
-        return zufallszahl;
-    }
-
-    public int checkWarning(){
-        if(warning){
-            return this.vestID;
+            zufallszahl = (int)(Math.random() * 50);
+            return zufallszahl;
         }
-        return -1;
     }
 
-}
+
+
+
+
+
+
