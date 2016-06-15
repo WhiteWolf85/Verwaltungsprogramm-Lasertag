@@ -1,4 +1,9 @@
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.util.Scanner;
+import java.applet.*;
+
+import static sun.applet.AppletResourceLoader.getImage;
 
 /**
  * Created by Thomas Laptop on 12.05.2016.
@@ -12,6 +17,7 @@ public class Team implements TeamInterface {
     private int gameCounter;
     private int teamMember;
     private Team team;
+    private Image teamLogo;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
@@ -41,12 +47,13 @@ public class Team implements TeamInterface {
         Team team = new Team();
         Scanner scanner = new Scanner(System.in);
         team.teamName = scanner.nextLine();
-        team.teamImage();
+        team.teamImage(teamLogo);
     }
 
     public void removeTeam(Team team) {
         for (int i = 0; i < teamMember; i++) {
-            team.spieler[i] = teamlos.spieler[i];
+            teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
+            teamlos.teamMember++;
         }
         if (team.teamMember == 0) {
             team = null;
@@ -66,8 +73,8 @@ public class Team implements TeamInterface {
         return this.teamScore;
     }
 
-    public void teamImage() {
-
+    public void teamImage(Image teamLogo) {
+        team.teamLogo = teamLogo;
     }
 
     //Anzahl der Gespielten Spiele des jeweiligen Teams
