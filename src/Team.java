@@ -1,8 +1,9 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.util.Scanner;
+import java.util.*;
 import java.applet.*;
+import java.util.List;
 
 import static sun.applet.AppletResourceLoader.getImage;
 
@@ -27,7 +28,8 @@ public class Team implements TeamInterface {
 
 
     //Team für Spieler ohne Team
-    Team teamlos;
+    //Muss in main, da in der Klasse keine Funktion
+    //Team teamlos;
 
     //Im Konstruktor wird der Name des Teams eingelesen?
     public void Team(String teamName) {
@@ -46,6 +48,7 @@ public class Team implements TeamInterface {
                 "Games played: " + gameCounter;
     }
 
+    //Fügt ein Team hinzu
     public void addTeam() {
         Team team = new Team();
         Scanner scanner = new Scanner(System.in);
@@ -53,10 +56,13 @@ public class Team implements TeamInterface {
         team.teamImage(teamLogo);
     }
 
+    //Entfernt ein Team und fügt die Spieler einer Arraylist hinzu, die alle Spieler sammelt, die "Teamlos" sind
     public void removeTeam(Team team) {
-        for (int i = 0; i < teamMember; i++) {
-            teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
-            teamlos.teamMember++;
+        List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
+        for (int i = 0; i < team.teamMember; i++) {
+            //teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
+            //teamlos.teamMember++;
+            teamloseSpieler.add(team.spieler[i]);
         }
         if (team.teamMember == 0) {
             team = null;
@@ -69,7 +75,9 @@ public class Team implements TeamInterface {
         team.spieler[team.teamMember] = spieler;
     }
 
+    //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
     public long sumScore(Spieler[] spieler) {
+        //For Schleife für 6 Westen
         for (int i = 0; i <= 5; i++) {
             this.teamScore += spieler[i].getScore();
         }
