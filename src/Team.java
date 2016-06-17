@@ -1,4 +1,5 @@
 import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
 import java.applet.*;
@@ -73,8 +74,9 @@ public class Team implements TeamInterface {
         return this.teamScore;
     }
 
-    public void teamImage(Image teamLogo) {
-        team.teamLogo = teamLogo;
+    public Image teamImage(Image teamLogo) {
+        Image image = teamLogo;
+        return image;
     }
 
     //Anzahl der Gespielten Spiele des jeweiligen Teams

@@ -1,5 +1,3 @@
-import sun.security.provider.ConfigFile;
-
 import java.awt.*;
 
 /**
@@ -15,7 +13,7 @@ interface TeamInterface {
     void addToTeam(Spieler spieler, Team team);
     int gamesPlayed(Team team);
     String toString();
-    void teamImage(Image teamLogo);
+    Image teamImage(Image teamLogo);
 
     //Getter
     String getTeamName();
