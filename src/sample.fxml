@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<GridPane alignment="center" hgap="10" maxWidth="1.7976931348623157E308" vgap="10" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
     <columnConstraints>
         <ColumnConstraints />
     </columnConstraints>
@@ -18,13 +18,13 @@
     </rowConstraints>
     <BorderPane prefHeight="611.0" prefWidth="601.0">
       <center>
-         <SplitPane dividerPositions="0.16193656093489148" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <SplitPane dividerPositions="0.16193656093489148" BorderPane.alignment="CENTER">
            <items>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                   <children>
                      <VBox layoutX="1.0" layoutY="1.0" prefHeight="603.0" prefWidth="170.0">
                         <children>
-                           <Button mnemonicParsing="false" onAction="#showMatch" fx:id="game" text="Spiel" />
+                           <Button fx:id="game" mnemonicParsing="false" onAction="#showMatch" text="Spiel" />
                            <Button mnemonicParsing="false" onAction="#showVest" text="Westen" />
                            <Button mnemonicParsing="false" onAction="#showPlayer" text="Spieler" />
                            <Button mnemonicParsing="false" onAction="#showTeam" text="Teams" />
@@ -35,7 +35,7 @@
                </AnchorPane>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="609.0" prefWidth="431.0">
                   <children>
-                     <AnchorPane fx:id="content" id="content" layoutX="1.0" layoutY="1.0" prefHeight="611.0" prefWidth="497.0" />
+                     <AnchorPane id="content" fx:id="content" layoutX="1.0" layoutY="1.0" maxWidth="1.7976931348623157E308" prefHeight="611.0" prefWidth="497.0" />
                   </children></AnchorPane>
            </items>
          </SplitPane>
