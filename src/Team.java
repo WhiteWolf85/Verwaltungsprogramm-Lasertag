@@ -19,6 +19,7 @@ public class Team implements TeamInterface {
     private int teamMember;
     private Team team;
     private Image teamLogo;
+    private static int teamCounter = 0;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
@@ -34,6 +35,7 @@ public class Team implements TeamInterface {
         this.teamScore = 0;
         this.gameCounter = 0;
         this.teamMember = 0;
+        teamCounter++;
     }
 
     //toString Methode, um die Attribute mit Wert anzuzeigen
@@ -104,6 +106,9 @@ public class Team implements TeamInterface {
         return this.team;
     }
 
+    public int getTeamCounter() {
+        return teamCounter;
+    }
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;

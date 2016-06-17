@@ -21,6 +21,7 @@ interface TeamInterface {
     int getGameCounter();
     int getTeamMember();
     Team getTeam();
+    int getTeamCounter();
 
     //Setter
     void setTeamName(String teamName);
