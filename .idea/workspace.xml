@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RanglisteTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sortable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Verwaltungsprogramm-Lasertag.iml" afterPath="$PROJECT_DIR$/Verwaltungsprogramm-Lasertag.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rangliste.java" afterPath="$PROJECT_DIR$/src/Rangliste.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RanglisteInterface.java" afterPath="$PROJECT_DIR$/src/RanglisteInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spieler.java" afterPath="$PROJECT_DIR$/src/Spieler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Team.java" afterPath="$PROJECT_DIR$/src/Team.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,22 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rangliste.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Rangliste.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Rangliste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#1114#1124#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#1031#1041#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sortable.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sortable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sortable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -150,7 +143,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -219,8 +212,8 @@
         <option value="$PROJECT_DIR$/src/Sortable.java" />
         <option value="$PROJECT_DIR$/src/Spieler.java" />
         <option value="$PROJECT_DIR$/src/Team.java" />
-        <option value="$PROJECT_DIR$/src/Rangliste.java" />
         <option value="$PROJECT_DIR$/src/RanglisteInterface.java" />
+        <option value="$PROJECT_DIR$/src/Rangliste.java" />
       </list>
     </option>
   </component>
@@ -706,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466234697809</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add interface sortable, change Rangliste and RanglisteInterface">
+      <created>1466237183174</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1466237183174</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -722,7 +722,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -772,7 +772,8 @@
     <MESSAGE value="added addSpieler()&#10;added attribute Spieler spieler&#10;updated SpielerInterface after those changes" />
     <MESSAGE value="update GUI" />
     <MESSAGE value="new testbranch" />
-    <option name="LAST_COMMIT_MESSAGE" value="new testbranch" />
+    <MESSAGE value="add interface sortable, change Rangliste and RanglisteInterface" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interface sortable, change Rangliste and RanglisteInterface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -988,7 +989,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1035,6 +1036,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,19 +1055,6 @@
         <state relative-caret-position="150">
           <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rangliste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#1114#1124#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,6 +1079,18 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rangliste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#1031#1041#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
