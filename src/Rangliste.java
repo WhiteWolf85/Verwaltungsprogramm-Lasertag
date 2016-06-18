@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -10,20 +11,20 @@ public class Rangliste implements RanglisteInterface {
     private long scores[];
 
     @Override
-    public Spieler[] getList(Team team){
+    public ArrayList<Spieler> getList(Team team){
         return getList(team,0);
     }
 
     @Override
-    public Spieler[] getList(Team team, int way) {
+    public ArrayList<Spieler> getList(Team team, int way) {
         boolean sort=true;
         Spieler puffer;
-        Spieler[] spieler=team.spieler;
+        ArrayList<Spieler> spieler=team.spieler;
         while(sort) {
             sort=false;
             for (int i = 0; i < spieler.length-1; i++) {
                 if(way==0) { //von groß nach klein
-                    if (spieler[i].getScore() < spieler[i + 1].getScore()) {
+                    if (spieler.get(i).getScore() < spieler.get(i + 1).getScore()) {
                         puffer = spieler[i];
                         spieler[i] = spieler[i + 1];
                         spieler[i + 1] = puffer;
