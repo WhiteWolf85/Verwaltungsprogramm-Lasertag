@@ -11,7 +11,7 @@ import static sun.applet.AppletResourceLoader.getImage;
  * Created by Thomas Laptop on 12.05.2016.
  */
 
-public class Team implements TeamInterface {
+public class Team implements TeamInterface, Sortable {
 
     //Attribute
     private String teamName;
@@ -101,6 +101,8 @@ public class Team implements TeamInterface {
     public long getTeamScore() {
         return this.teamScore;
     }
+
+    public long getScore(){return this.teamScore;}
 
     public int getGameCounter() {
         return this.gameCounter;

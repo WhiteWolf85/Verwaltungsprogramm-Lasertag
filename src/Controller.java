@@ -38,7 +38,7 @@ public class Controller {
 
     public void showList(ActionEvent event) throws IOException {
 
-        Node node = (Node)FXMLLoader.load(getClass().getResource("team.fxml"));
+        Node node = (Node)FXMLLoader.load(getClass().getResource("list.fxml"));
         content.getChildren().setAll(node);
     }
 
