@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by Tobi on 12.05.2016.
  */
-public class Spieler implements SpielerInterface {
+public class Spieler implements SpielerInterface, Sortable{
 
         public String name;
         public int age;

@@ -1,39 +1,81 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.SortedSet;
 
 /**
  * Created by franz on 16.05.16.
  */
 public class Rangliste implements RanglisteInterface {
 
-    private Spieler playerList[];
-    private Team teamList[];
-    private long scores[];
 
+    public ArrayList<Sortable> getSortedList(ArrayList<Sortable> list){
+        return this.getSortedList(list,0);
+    }
+
+    public ArrayList<Sortable> getSortedList(ArrayList<Sortable> list, int way){
+
+        boolean sort=true;
+        Sortable puffer;
+
+        while(sort) {
+            sort=false;
+            for (int i = 0; i < list.size()-1; i++) {
+                if (list.get(i).getScore() < list.get(i + 1).getScore()) {
+                        puffer = list.get(i);
+                        list.set(i,list.get(i + 1));
+                        list.set(i + 1,puffer);
+                        sort = true;
+                }
+            }
+        }
+
+        if(way==0){
+            return list;
+        }else{
+            return this.reverseList(list);
+        }
+
+    }
+
+    private ArrayList<Sortable> reverseList(ArrayList<Sortable> list){
+        ArrayList<Sortable> reverseList=new ArrayList<Sortable>();
+        for(int i=list.size();i>=0;i--){
+            reverseList.add(list.get(i));
+        }
+        return reverseList;
+    }
+
+
+
+
+
+    /*
     @Override
-    public Spieler[] getList(Team team){
+    public ArrayList<Spieler> getList(Team team){
         return getList(team,0);
     }
 
     @Override
-    public Spieler[] getList(Team team, int way) {
-        boolean sort=true;
+    public ArrayList<Spieler> getList(Team team, int way) {
+
         Spieler puffer;
-        Spieler[] spieler=team.spieler;
+        ArrayList<Spieler> spieler=team.spieler;
         while(sort) {
             sort=false;
-            for (int i = 0; i < spieler.length-1; i++) {
+            for (int i = 0; i < spieler.size()-1; i++) {
                 if(way==0) { //von groß nach klein
-                    if (spieler[i].getScore() < spieler[i + 1].getScore()) {
-                        puffer = spieler[i];
-                        spieler[i] = spieler[i + 1];
-                        spieler[i + 1] = puffer;
+                    if (spieler.get(i).getScore() < spieler.get(i + 1).getScore()) {
+                        puffer = spieler.get(i);
+                        spieler.set(i,spieler.get(i + 1));
+                        spieler.set(i + 1,puffer);
                         sort = true;
                     }
                 }else{ //von klein nach groß
-                    if (spieler[i].getScore() > spieler[i + 1].getScore()) {
-                        puffer = spieler[i];
-                        spieler[i] = spieler[i + 1];
-                        spieler[i + 1] = puffer;
+                    if (spieler.get(i).getScore() > spieler.get(i + 1).getScore()) {
+                        puffer = spieler.get(i);
+                        spieler.set(i,spieler.get(i + 1));
+                        spieler.set(i + 1,puffer);
                         sort = true;
                     }
                 }
@@ -44,29 +86,29 @@ public class Rangliste implements RanglisteInterface {
     }
 
     @Override
-    public Team[] getList(Team[] teams){
+    public ArrayList<Team> getList(ArrayList<Team> teams){
         return getList(teams,0);
     }
 
     @Override
-    public Team[] getList(Team[] teams, int way){
+    public ArrayList<Team> getList(ArrayList<Team> teams, int way){
         boolean sort=true;
         Team puffer;
         while(sort) {
             sort=false;
-            for (int i = 0; i < teams.length-1; i++) {
+            for (int i = 0; i < teams.size()-1; i++) {
                 if(way==0) { //von groß nach klein
-                    if (teams[i].getTeamScore() < teams[i + 1].getTeamScore()) {
-                        puffer = teams[i];
-                        teams[i] = teams[i + 1];
-                        teams[i + 1] = puffer;
+                    if (teams.get(i).getTeamScore() < teams.get(i + 1).getTeamScore()) {
+                        puffer = teams.get(i);
+                        teams.set(i,teams.get(i + 1));
+                        teams.set(i + 1,puffer);
                         sort = true;
                     }
                 }else{ //von klein nach groß
-                    if (teams[i].getTeamScore() > teams[i + 1].getTeamScore()) {
-                        puffer = teams[i];
-                        teams[i] = teams[i + 1];
-                        teams[i + 1] = puffer;
+                    if (teams.get(i).getTeamScore() > teams.get(i + 1).getTeamScore()) {
+                        puffer = teams.get(i);
+                        teams.set(i,teams.get(i + 1));
+                        teams.set(i + 1,puffer);
                         sort = true;
                     }
                 }
@@ -77,31 +119,32 @@ public class Rangliste implements RanglisteInterface {
     }
 
     @Override
-    public Spieler[] getAllPlayers(Team[] teams){
+    public ArrayList<Spieler> getAllPlayers(ArrayList<Team> teams){
         return getAllPlayers(teams,0);
     }
 
     @Override
-    public Spieler[] getAllPlayers(Team[] teams,int way){
-        for(int i=0;i<teams.length;i++){
-            for(int a=0;a<teams[i].spieler.length;a++) {
-                this.scores[i] = teams[i].spieler[a].getScore();
+    public ArrayList<Spieler> getAllPlayers(ArrayList<Team> teams,int way){
+        for(int i=0;i<teams.size();i++){
+            for(int a=0;a<teams.get(i).spieler.length;a++) {
+                this.scores.set(i,teams.get(i).spieler[a].getScore());
             }
         }
         if(way==0){
-            Arrays.sort(this.scores);
+            Collections.sort(scores);
         }else{
             //Arrays.sort(this.scores, Collections.reverseOrder());
         }
 
-        for(int i=0;i<teams.length;i++){
-            for(int a=0;a<this.scores.length;i++) {
-                if (teams[i].getTeamScore() == this.scores[a]) {
-                    this.teamList[i] = teams[i];
+        for(int i=0;i<teams.size();i++){
+            for(int a=0;a<this.scores.size();i++) {
+                if (this.scores.get(a).equals(teams.get(i).getTeamScore())) {
+                    this.teamList.set(i,teams.get(i));
                 }
             }
         }
         return this.playerList;
     }
+*/
 
 }
