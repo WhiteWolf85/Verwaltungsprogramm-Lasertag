@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface RanglisteInterface {
 
-    public ArrayList<Sortable> getSortedList(ArrayList<Sortable> list, int way);
-    public ArrayList<Sortable> getSortedList(ArrayList<Sortable> list);
+    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean way);
+    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list);
 
 }

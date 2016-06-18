@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.SortedSet;
 
 /**
  * Created by franz on 16.05.16.
@@ -6,11 +7,11 @@ import java.util.ArrayList;
 public class Rangliste implements RanglisteInterface {
 
 
-    public ArrayList<Sortable> getSortedList(ArrayList<Sortable> list){
-        return this.getSortedList(list,0);
+    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list){
+        return this.getSortedList(list,true);
     }
 
-    public ArrayList<Sortable> getSortedList(ArrayList<Sortable> list, int way){
+    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean way){
 
         boolean sort=true;
         Sortable puffer;
@@ -27,7 +28,7 @@ public class Rangliste implements RanglisteInterface {
             }
         }
 
-        if(way==0){
+        if(way){
             return list;
         }else{
             return this.reverseList(list);
@@ -37,14 +38,11 @@ public class Rangliste implements RanglisteInterface {
 
     private ArrayList<Sortable> reverseList(ArrayList<Sortable> list){
         ArrayList<Sortable> reverseList=new ArrayList<Sortable>();
-        for(int i=list.size();i>=0;i--){
+        for(int i=list.size()-1;i>=0;i--){
             reverseList.add(list.get(i));
         }
         return reverseList;
     }
-
-
-
 
 
     /*
