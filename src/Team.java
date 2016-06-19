@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -12,7 +13,6 @@ public class Team implements TeamInterface, Sortable {
     private int gameCounter;
     private int teamMember;
     private Team team;
-
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
     Spieler[] spieler;

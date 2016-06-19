@@ -13,13 +13,14 @@ import java.util.ArrayList;
 public class ListController {
 
     @FXML
-            private TableView listTeam;
+    private TableView listTeam;
     @FXML
     private TableColumn<Team,String> teamname;
     @FXML
     private TableColumn<Team,String>teamscore;
 
     //Testwerte für Rangliste
+
 
     private Team beamforce = new Team();
     private Team btb = new Team();
@@ -32,6 +33,8 @@ public class ListController {
 
     private void setValues()
     {
+
+
 
         beamforce.setTeamName("Beamforce ONE");
         btb.setTeamName("BTB");
@@ -70,6 +73,11 @@ public class ListController {
         tine.nickName = "Tine";
         tine.setRole("Mittelfeld");
         tine.score = 50;
+
+        Players play=new Players();
+        play.addPlayer(bloodyMary);
+        play.addPlayer(whiteWolf);
+
     }
     //Ende Testwerte
 
@@ -87,8 +95,10 @@ public class ListController {
         teamscore.setCellValueFactory(new PropertyValueFactory<Team,String>("teamScore"));
 
         listTeam.setItems(ol);
-        listTeam.getColumns().clear();
-        listTeam.getColumns().addAll(teamname, teamscore);
+
+
+        Team test=new Team();
+        test.testSpecialClass();
     }
 
 }
