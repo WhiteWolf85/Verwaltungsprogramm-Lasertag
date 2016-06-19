@@ -10,6 +10,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.ArrayList;
 
 public class Main extends Application {
 
@@ -18,6 +19,10 @@ public class Main extends Application {
     public static BorderPane getRoot() {
         return root;
     }
+
+    public static ArrayList<Spieler> globalPlayers;
+    public static ArrayList<Team> globalTeams;
+    public static ArrayList<Vest> globalVests;
 
     @Override
     public void start(Stage primaryStage) throws Exception{

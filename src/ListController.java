@@ -21,20 +21,20 @@ public class ListController {
 
     //Testwerte für Rangliste
 
-
-    private Team beamforce = new Team();
-    private Team btb = new Team();
+/*
+    private Team beamforce = new Team("Beamforce");
+    private Team btb = new Team("BTB");
     private Spieler whiteWolf = new Spieler();
     private Spieler bloodyMary = new Spieler();
     private Spieler reitermaniac=new Spieler();
     private Spieler pg = new Spieler();
     private Spieler tine = new Spieler();
     private Rangliste sort=new Rangliste();
-
+*/
     private void setValues()
     {
 
-
+/*
 
         beamforce.setTeamName("Beamforce ONE");
         btb.setTeamName("BTB");
@@ -73,23 +73,19 @@ public class ListController {
         tine.nickName = "Tine";
         tine.setRole("Mittelfeld");
         tine.score = 50;
-
-        Players play=new Players();
-        play.addPlayer(bloodyMary);
-        play.addPlayer(whiteWolf);
-
+*/
     }
     //Ende Testwerte
 
     public void fillList(){
         setValues();
-        ArrayList<Sortable> list1=new ArrayList<Sortable>();
-        list1.add(beamforce);
-        list1.add(btb);
+        //ArrayList<Sortable> list1=(ArrayList<Sortable>) Controller.globalTeams;
+        //list1.add(beamforce);
+        //list1.add(btb);
         Rangliste sort=new Rangliste();
 
-        ArrayList<Team> sortedTeam=(ArrayList<Team>)sort.getSortedList(list1);
-        ObservableList<Team> ol= FXCollections.observableArrayList(sortedTeam);
+        //ArrayList<Team> sortedTeam=(ArrayList<Team>)sort.getSortedList(list1);
+        ObservableList<Team> ol= FXCollections.observableArrayList(Main.globalTeams);
 
         teamname.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
         teamscore.setCellValueFactory(new PropertyValueFactory<Team,String>("teamScore"));
@@ -97,8 +93,6 @@ public class ListController {
         listTeam.setItems(ol);
 
 
-        Team test=new Team();
-        test.testSpecialClass();
     }
 
 }

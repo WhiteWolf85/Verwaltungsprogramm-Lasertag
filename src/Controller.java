@@ -15,7 +15,7 @@ public class Controller {
     @FXML
     private AnchorPane content;
 
-    private ArrayList<Spieler> Player;
+
 
     public void showMatch(ActionEvent event) throws IOException {
         BorderPane root=Main.getRoot();

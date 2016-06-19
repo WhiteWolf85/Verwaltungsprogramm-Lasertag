@@ -13,7 +13,6 @@ public class Vest implements VestInterface {
     private static final float maxBattery = (float) 8.0;
     private static final float minBattery = (float) 5.0;
 
-
     public int getVestNumber() {
         return this.vestNumber;
     }

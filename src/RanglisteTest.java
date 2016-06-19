@@ -9,8 +9,8 @@ import static org.junit.Assert.*;
  */
 public class RanglisteTest {
 
-    Team beamforce = new Team();
-    Team btb = new Team();
+    Team beamforce = new Team("Beamforce");
+    Team btb = new Team("BTB");
     Spieler whiteWolf = new Spieler();
     Spieler bloodyMary = new Spieler();
     Spieler reitermaniac=new Spieler();
