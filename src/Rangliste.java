@@ -1,16 +1,16 @@
 import java.util.ArrayList;
-import java.util.SortedSet;
 
 /**
  * Created by franz on 16.05.16.
  */
 public class Rangliste implements RanglisteInterface {
 
-
+    @Override
     public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list){
         return this.getSortedList(list,true);
     }
 
+    @Override
     public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean way){
 
         boolean sort=true;

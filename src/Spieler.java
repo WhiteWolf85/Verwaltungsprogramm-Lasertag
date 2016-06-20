@@ -27,6 +27,7 @@ public class Spieler implements SpielerInterface, Sortable{
         this.team = team;
         this.role = role;
         this.status = status;
+        Main.globalPlayers.add(this);
     }
 
     public void addSpieler() {
