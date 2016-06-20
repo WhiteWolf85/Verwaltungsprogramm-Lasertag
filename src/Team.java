@@ -24,7 +24,7 @@ public class Team implements TeamInterface, Sortable {
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen    //Anm. ArrayList wäre besser
-    Spieler[] spieler;
+    ArrayList<Spieler> spieler=new ArrayList<Spieler>();
 
 
     //Team für Spieler ohne Team
@@ -63,7 +63,7 @@ public class Team implements TeamInterface, Sortable {
         for (int i = 0; i < team.teamMember; i++) {
             //teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
             //teamlos.teamMember++;
-            teamloseSpieler.add(team.spieler[i]);
+            //teamloseSpieler.add(team.spieler[i]);
             team.teamMember--;
         }
         if (team.teamMember == 0) {
@@ -74,7 +74,7 @@ public class Team implements TeamInterface, Sortable {
     //Fügt Spieler an ein Team an
     public void addToTeam(Spieler spieler) {
         this.teamMember++;
-        this.spieler[this.teamMember] = spieler;
+        this.spieler.add(spieler);
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf

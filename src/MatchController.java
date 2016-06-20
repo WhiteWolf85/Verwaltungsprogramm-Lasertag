@@ -29,12 +29,16 @@ public class MatchController implements MatchInterface{
     private Label detailResultTeam1;
     @FXML
     private Label detailResultTeam2;
+    @FXML
+    private Label games;
 
-    private int playedMatches;
+    private static int playedMatches;
 
     public void initialize(){
         Team beamforce=new Team("Beamforce");
         Team btb=new Team("BTB");
+
+        games.setText(Integer.toString(playedMatches));
 
         team1.setItems(FXCollections.observableArrayList(Main.globalTeams));
         team2.setItems(FXCollections.observableArrayList(Main.globalTeams));
@@ -46,9 +50,13 @@ public class MatchController implements MatchInterface{
         Team beamforce=(Team)team1.getValue();
         Team btb=(Team)team2.getValue();
         Vest v1=new Vest();
+        Main.globalVests.add(v1);
         Vest v2=new Vest();
+        Main.globalVests.add(v2);
         Vest v3=new Vest();
+        Main.globalVests.add(v3);
         Vest v4=new Vest();
+        Main.globalVests.add(v4);
         Spieler s1=new Spieler();
         s1.nickName="WhiteWolf";
         Spieler s2=new Spieler();
@@ -65,11 +73,17 @@ public class MatchController implements MatchInterface{
         Team team1=(Team)this.team1.getValue();
         Team team2=(Team)this.team2.getValue();
 
+        //Ende Testwerte
+
+        resultTeam1.setText("");
+        resultTeam2.setText("");
+        detailResultTeam1.setText("");
+        detailResultTeam2.setText("");
 
         if(!team1.equals(team2)){
             int gesamt=team1.getTeamMember()+team2.getTeamMember();
             if(gesamt<=Main.globalVests.size()){
-
+                playedMatches++;
                 Random r=new Random();
                 int playerScore=0;
                 int vestCount=0;
@@ -92,6 +106,8 @@ public class MatchController implements MatchInterface{
                     detailResultTeam2.setText(detailResultTeam2.getText()+player.nickName+":"+playerScore+"\n");
                 }
                 resultTeam2.setText(Integer.toString(result));
+
+                games.setText(Integer.toString(playedMatches));
 
             }else{
                 //Mehr Spieler als Westen
