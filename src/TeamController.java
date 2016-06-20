@@ -5,9 +5,4 @@ import java.util.ArrayList;
  */
 public class TeamController {
 
-    public void addTeam(){
-        Team beamforce=new Team("Beamforce");
-        Team redforce=new Team("Redforce");
-    }
-
 }

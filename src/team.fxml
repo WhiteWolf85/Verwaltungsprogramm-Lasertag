@@ -25,7 +25,7 @@
                 <TableColumn prefWidth="249.0" text="Team" />
               </columns>
             </TableView>
-            <Button layoutX="177.0" layoutY="353.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" onAction="#addTeam" text="add Team" />
+            <Button layoutX="177.0" layoutY="353.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="add Team" />
             <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" text="remove Team" />
             <Slider layoutX="272.0" layoutY="32.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="18.0" />
          </children></AnchorPane>
