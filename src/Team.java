@@ -1,10 +1,17 @@
-import java.util.Scanner;
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+import java.applet.*;
+import java.util.List;
+
+import static sun.applet.AppletResourceLoader.getImage;
 
 /**
  * Created by Thomas Laptop on 12.05.2016.
  */
 
-public class Team implements TeamInterface {
+public class Team implements TeamInterface, Sortable {
 
     //Attribute
     private String teamName;
@@ -12,6 +19,8 @@ public class Team implements TeamInterface {
     private int gameCounter;
     private int teamMember;
     private Team team;
+    private Image teamLogo;
+    private static int teamCounter = 0;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
@@ -19,14 +28,17 @@ public class Team implements TeamInterface {
 
 
     //Team für Spieler ohne Team
-    Team teamlos;
+    //Muss in main, da in der Klasse keine Funktion
+    //Team teamlos;
 
     //Im Konstruktor wird der Name des Teams eingelesen?
-    public void Team(String teamName) {
+    public Team(String teamName) {
         this.teamName = teamName;
         this.teamScore = 0;
         this.gameCounter = 0;
         this.teamMember = 0;
+        Main.globalTeams.add(this);
+        teamCounter++;
     }
 
     //toString Methode, um die Attribute mit Wert anzuzeigen
@@ -37,16 +49,22 @@ public class Team implements TeamInterface {
                 "Games played: " + gameCounter;
     }
 
-    public void addTeam() {
+    //Fügt ein Team hinzu
+    /*public void addTeam() {
         Team team = new Team();
         Scanner scanner = new Scanner(System.in);
         team.teamName = scanner.nextLine();
-        team.teamImage();
-    }
+        team.teamImage(teamLogo);
+    }*/
 
+    //Entfernt ein Team und fügt die Spieler einer Arraylist hinzu, die alle Spieler sammelt, die "Teamlos" sind
     public void removeTeam(Team team) {
-        for (int i = 0; i < teamMember; i++) {
-            team.spieler[i] = teamlos.spieler[i];
+        List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
+        for (int i = 0; i < team.teamMember; i++) {
+            //teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
+            //teamlos.teamMember++;
+            teamloseSpieler.add(team.spieler[i]);
+            team.teamMember--;
         }
         if (team.teamMember == 0) {
             team = null;
@@ -59,15 +77,18 @@ public class Team implements TeamInterface {
         team.spieler[team.teamMember] = spieler;
     }
 
+    //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
     public long sumScore(Spieler[] spieler) {
+        //For Schleife für 6 Westen
         for (int i = 0; i <= 5; i++) {
             this.teamScore += spieler[i].getScore();
         }
         return this.teamScore;
     }
 
-    public void teamImage() {
-
+    public Image teamImage(Image teamLogo) {
+        Image image = teamLogo;
+        return image;
     }
 
     //Anzahl der Gespielten Spiele des jeweiligen Teams
@@ -83,6 +104,8 @@ public class Team implements TeamInterface {
         return this.teamScore;
     }
 
+    public long getScore(){return this.teamScore;}
+
     public int getGameCounter() {
         return this.gameCounter;
     }
@@ -95,6 +118,9 @@ public class Team implements TeamInterface {
         return this.team;
     }
 
+    public int getTeamCounter() {
+        return teamCounter;
+    }
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;

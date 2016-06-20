@@ -10,8 +10,6 @@ interface VestInterface {
 
     int getScore();
 
-    float getBatteryCharge();
-
     int getHits();
 
     int getHitsby();
@@ -21,8 +19,6 @@ interface VestInterface {
     void setVestNumber(int vestId);
 
     void setRatio(float vestRatio);
-
-    void setBatteryCharge(float battery);
 
     void setHits(int dealtHits);
 
