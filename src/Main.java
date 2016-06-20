@@ -39,6 +39,10 @@ public class Main extends Application {
         URL paneOneUrl = getClass().getResource("team.fxml");
         SplitPane paneOne = FXMLLoader.load( paneOneUrl );
 
+        globalPlayers=new ArrayList<Spieler>();
+        globalTeams=new ArrayList<Team>();
+        globalVests=new ArrayList<Vest>();
+
         root.setLeft(menu);
         root.setCenter(paneOne);
 

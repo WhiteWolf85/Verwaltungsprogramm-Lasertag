@@ -27,6 +27,7 @@ public class Team implements TeamInterface, Sortable {
         this.teamScore = 0;
         this.gameCounter = 0;
         this.teamMember = 0;
+        Main.globalTeams.add(this);
     }
 
     //toString Methode, um die Attribute mit Wert anzuzeigen
