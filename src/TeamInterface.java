@@ -9,7 +9,7 @@ interface TeamInterface {
     long sumScore(Spieler[] spieler);
     //void addTeam();
     void removeTeam(Team team);
-    void addToTeam(Spieler spieler, Team team);
+    void addToTeam(Spieler spieler);
     int gamesPlayed(Team team);
     String toString();
     Image teamImage(Image teamLogo);
