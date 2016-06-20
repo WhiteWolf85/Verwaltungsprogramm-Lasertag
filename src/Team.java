@@ -72,9 +72,9 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Fügt Spieler an ein Team an
-    public void addToTeam(Spieler spieler, Team team) {
-        team.teamMember++;
-        team.spieler[team.teamMember] = spieler;
+    public void addToTeam(Spieler spieler) {
+        this.teamMember++;
+        this.spieler[this.teamMember] = spieler;
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
