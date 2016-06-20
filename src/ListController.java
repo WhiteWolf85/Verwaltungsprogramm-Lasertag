@@ -77,6 +77,10 @@ public class ListController {
     }
     //Ende Testwerte
 
+    public void initialize(){
+        this.fillList();
+    }
+
     public void fillList(){
         setValues();
         //ArrayList<Sortable> list1=(ArrayList<Sortable>) Controller.globalTeams;

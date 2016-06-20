@@ -60,8 +60,7 @@ public class Controller {
 
         root.setCenter(list);
 
-        //ListController listController=new ListController();
-        //listController.fillList();
+
     }
 
 }
