@@ -4,8 +4,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 /**
@@ -22,9 +26,9 @@ public class MatchController implements MatchInterface{
     @FXML
     private Label resultTeam2;
     @FXML
-    private TableView detailResultTeam1;
+    private Label detailResultTeam1;
     @FXML
-    private TableView detailResultTeam2;
+    private Label detailResultTeam2;
 
     private int playedMatches;
 
@@ -37,16 +41,58 @@ public class MatchController implements MatchInterface{
     }
 
     public void startGame(ActionEvent event){
+
+        //Testwerte
+        Team beamforce=(Team)team1.getValue();
+        Team btb=(Team)team2.getValue();
+        Vest v1=new Vest();
+        Vest v2=new Vest();
+        Vest v3=new Vest();
+        Vest v4=new Vest();
+        Spieler s1=new Spieler();
+        s1.nickName="WhiteWolf";
+        Spieler s2=new Spieler();
+        s2.nickName="BloodyMary";
+        Spieler s3=new Spieler();
+        s3.nickName="PG";
+        Spieler s4=new Spieler();
+        s4.nickName="Tine";
+        beamforce.addToTeam(s1);
+        beamforce.addToTeam(s2);
+        btb.addToTeam(s3);
+        btb.addToTeam(s4);
+
         Team team1=(Team)this.team1.getValue();
         Team team2=(Team)this.team2.getValue();
-        Random r=new Random();
+
 
         if(!team1.equals(team2)){
             int gesamt=team1.getTeamMember()+team2.getTeamMember();
             if(gesamt<=Main.globalVests.size()){
-                for(Spieler player:team1.spieler){
 
+                Random r=new Random();
+                int playerScore=0;
+                int vestCount=0;
+                int result=0;
+
+                for(Spieler player:team1.spieler){
+                    //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
+                    playerScore=r.nextInt(900) - 450;
+                    detailResultTeam1.setText(detailResultTeam1.getText()+player.nickName+":"+playerScore+"\n");
+                    result+=playerScore;
+                    vestCount++;   //wird benötigt, um bei Team 2 mit der richtigen Weste weiter zu machen
                 }
+                resultTeam1.setText(Integer.toString(result));
+                result=0;
+
+                for(Spieler player:team2.spieler){
+                    //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
+                    playerScore=r.nextInt(900) - 450;
+                    result+=playerScore;
+                    detailResultTeam2.setText(detailResultTeam2.getText()+player.nickName+":"+playerScore+"\n");
+                }
+                resultTeam2.setText(Integer.toString(result));
+
             }else{
                 //Mehr Spieler als Westen
             }
@@ -72,10 +118,10 @@ public class MatchController implements MatchInterface{
 
     private int getResult(){
         int zufallszahl;
-            zufallszahl = (int)(Math.random() * 50);
-            return zufallszahl;
-        }
+        zufallszahl = (int)(Math.random() * 50);
+        return zufallszahl;
     }
+}
 
 
 

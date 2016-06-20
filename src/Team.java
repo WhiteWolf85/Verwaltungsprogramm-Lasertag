@@ -23,7 +23,7 @@ public class Team implements TeamInterface, Sortable {
     private static int teamCounter = 0;
 
 
-    //Array von der Klasse Spieler, um die Teammitglieder einzulesen
+    //Array von der Klasse Spieler, um die Teammitglieder einzulesen    //Anm. ArrayList wäre besser
     Spieler[] spieler;
 
 
