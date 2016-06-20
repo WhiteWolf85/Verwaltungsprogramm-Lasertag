@@ -6,6 +6,8 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 
+import java.util.Random;
+
 /**
  * Created by franz on 20.05.16.
  */
@@ -37,11 +39,19 @@ public class MatchController implements MatchInterface{
     public void startGame(ActionEvent event){
         Team team1=(Team)this.team1.getValue();
         Team team2=(Team)this.team2.getValue();
+        Random r=new Random();
 
         if(!team1.equals(team2)){
-            int gesamt=team1.getTeamMember()
-        }else{
+            int gesamt=team1.getTeamMember()+team2.getTeamMember();
+            if(gesamt<=Main.globalVests.size()){
+                for(Spieler player:team1.spieler){
 
+                }
+            }else{
+                //Mehr Spieler als Westen
+            }
+        }else{
+            //gleiches Team ausgewählt
         }
 
 
