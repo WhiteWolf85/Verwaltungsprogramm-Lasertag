@@ -6,9 +6,8 @@ import java.awt.*;
 interface TeamInterface {
 
     //Methoden
-    void Team(String teamName);
     long sumScore(Spieler[] spieler);
-    void addTeam();
+    //void addTeam();
     void removeTeam(Team team);
     void addToTeam(Spieler spieler, Team team);
     int gamesPlayed(Team team);

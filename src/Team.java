@@ -32,7 +32,7 @@ public class Team implements TeamInterface, Sortable {
     //Team teamlos;
 
     //Im Konstruktor wird der Name des Teams eingelesen?
-    public void Team(String teamName) {
+    public Team(String teamName) {
         this.teamName = teamName;
         this.teamScore = 0;
         this.gameCounter = 0;
@@ -50,12 +50,12 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Fügt ein Team hinzu
-    public void addTeam() {
+    /*public void addTeam() {
         Team team = new Team();
         Scanner scanner = new Scanner(System.in);
         team.teamName = scanner.nextLine();
         team.teamImage(teamLogo);
-    }
+    }*/
 
     //Entfernt ein Team und fügt die Spieler einer Arraylist hinzu, die alle Spieler sammelt, die "Teamlos" sind
     public void removeTeam(Team team) {
