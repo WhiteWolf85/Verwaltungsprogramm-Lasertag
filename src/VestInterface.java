@@ -26,5 +26,5 @@ interface VestInterface {
 
     void setStatus (String status);
 
-
+    void Vest();
 }

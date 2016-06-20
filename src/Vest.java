@@ -22,10 +22,6 @@ public class Vest implements VestInterface {
     private int hits;
     private int hitsby;
 
-    public void Vest(){
-        Main.globalVests.add(this);
-    }
-
     public int getVestNumber() {
         return this.vestNumber;
     }
@@ -44,13 +40,23 @@ public class Vest implements VestInterface {
 
 
 
+    @Override
+    public String getStatus() {
+        return null;
+    }
+    @Override
+    public void setStatus(String status) {
+
+    }
+
+
     public void setVestNumber(int vestId) {
         this.vestNumber = vestId;
     }
     public void setRatio(float vestRatio) {
         this.ratio = vestRatio;
     }
-//kein setScore, da nur lesbar, nicht veränderbar
+    //kein setScore, da nur lesbar, nicht veränderbar
     public void setHits(int dealtHits) {
         this.hits = dealtHits;
     }
@@ -61,7 +67,10 @@ public class Vest implements VestInterface {
 
 
 
-    //kommen später in main!
+    public void Vest(){
+        Main.globalVests.add(this);
+    }
+
     public void calculateScore () {
         this.score = (this.hits * 5) - (this.hitsby * 3);
     }

@@ -41,19 +41,19 @@ public class RanglisteTest {
         whiteWolf.setRole("Mittelfeld");
         whiteWolf.score=9001;               //over 9000 ;-)
 
-        bloodyMary.age=20;
+        bloodyMary.age=25;
         bloodyMary.name="Anna";
         bloodyMary.status="aktiv";
         bloodyMary.nickName="Bloody Mary";
         bloodyMary.setRole("Runner");
-        bloodyMary.score=689;
+        bloodyMary.score=1000;              //wenn schon, denn schon
 
         reitermaniac.age=20;
         reitermaniac.name="Tom";
         reitermaniac.status="aktiv";
         reitermaniac.nickName="Reitermaniac";
         reitermaniac.setRole("Runner");
-        reitermaniac.score=800;
+        reitermaniac.score=200;            //wir müssen ja realistisch bleiben
 
         pg.age=23;
         pg.name="PG";

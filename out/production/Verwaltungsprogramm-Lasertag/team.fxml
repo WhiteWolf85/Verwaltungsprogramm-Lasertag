@@ -16,67 +16,67 @@
 
 
 <SplitPane fx:controller="TeamController" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
-  <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-         <children>
-            <TableView prefHeight="343.0" prefWidth="269.0">
-              <columns>
-                <TableColumn prefWidth="45.0" text="Logo" />
-                <TableColumn prefWidth="249.0" text="Team" />
-              </columns>
-            </TableView>
-            <Button layoutX="177.0" layoutY="353.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="add Team" />
-            <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" text="remove Team" />
-            <Slider layoutX="272.0" layoutY="32.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="18.0" />
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-         <children>
-            <GridPane prefHeight="398.0" prefWidth="295.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="84.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="211.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="157.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="154.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="127.0" minHeight="5.0" prefHeight="59.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <ImageView fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
-                     <GridPane.margin>
-                        <Insets left="85.0" right="85.0" top="25.0" />
-                     </GridPane.margin>
-                  </ImageView>
-                  <Label text="Team:" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-                     <GridPane.margin>
-                        <Insets left="10.0" top="5.0" />
-                     </GridPane.margin>
-                  </Label>
-                  <Label prefHeight="21.0" prefWidth="76.0" text="Members:" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-                     <GridPane.margin>
-                        <Insets left="10.0" top="5.0" />
-                     </GridPane.margin>
-                  </Label>
-                  <Label text="Score:" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-                     <GridPane.margin>
-                        <Insets left="10.0" top="10.0" />
-                     </GridPane.margin>
-                  </Label>
-                  <ListView prefHeight="166.0" prefWidth="211.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="2">
-                     <GridPane.margin>
-                        <Insets right="5.0" />
-                     </GridPane.margin></ListView>
-                  <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
-                     <GridPane.margin>
-                        <Insets right="5.0" />
-                     </GridPane.margin></ListView>
-                  <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
-                     <GridPane.margin>
-                        <Insets bottom="10.0" right="5.0" />
-                     </GridPane.margin></ListView>
-               </children>
-            </GridPane>
-         </children></AnchorPane>
-  </items>
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <TableView prefHeight="343.0" prefWidth="269.0">
+                    <columns>
+                        <TableColumn prefWidth="45.0" text="Logo" />
+                        <TableColumn prefWidth="249.0" text="Team" />
+                    </columns>
+                </TableView>
+                <Button layoutX="177.0" layoutY="353.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="add Team" />
+                <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" text="remove Team" />
+                <Slider layoutX="272.0" layoutY="32.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="18.0" />
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <GridPane prefHeight="398.0" prefWidth="295.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="84.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="211.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="157.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="154.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="127.0" minHeight="5.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+                            <GridPane.margin>
+                                <Insets left="85.0" right="85.0" top="25.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                        <Label text="Team:" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+                            <GridPane.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="76.0" text="Members:" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+                            <GridPane.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <Label text="Score:" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+                            <GridPane.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <ListView prefHeight="166.0" prefWidth="211.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets right="5.0" />
+                            </GridPane.margin></ListView>
+                        <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets right="5.0" />
+                            </GridPane.margin></ListView>
+                        <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" right="5.0" />
+                            </GridPane.margin></ListView>
+                    </children>
+                </GridPane>
+            </children></AnchorPane>
+    </items>
 </SplitPane>
