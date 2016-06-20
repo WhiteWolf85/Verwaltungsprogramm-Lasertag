@@ -61,7 +61,7 @@ public class Team implements TeamInterface, Sortable {
     public void removeTeam(Team team) {
         List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
         for (int i = 0; i < team.teamMember; i++) {
-            //teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
+            teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
             //teamlos.teamMember++;
             //teamloseSpieler.add(team.spieler[i]);
             team.teamMember--;
