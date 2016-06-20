@@ -5,13 +5,17 @@ import java.util.ArrayList;
  */
 public class Rangliste implements RanglisteInterface {
 
+
+    //Konstruktor falls optionaler Parameter "reverseSort" nicht gesetzt wurde
     @Override
     public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list){
-        return this.getSortedList(list,true);
+        return this.getSortedList(list,false);
     }
 
+    // Sortiere übergebene Liste vom Typ Sortable und gib sie als ArrayList<? extends sortable> wieder sortiert zurück
+    // falls reverseSort auf True gesetzt wurde, drehe die Liste um
     @Override
-    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean way){
+    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean reverseSort){
 
         boolean sort=true;
         Sortable puffer;
@@ -28,14 +32,15 @@ public class Rangliste implements RanglisteInterface {
             }
         }
 
-        if(way){
-            return list;
-        }else{
+        if(reverseSort){
             return this.reverseList(list);
+        }else{
+            return list;
         }
 
     }
 
+    // Sortiere ArrayList in anderer Reihenfolge
     private ArrayList<Sortable> reverseList(ArrayList<Sortable> list){
         ArrayList<Sortable> reverseList=new ArrayList<Sortable>();
         for(int i=list.size()-1;i>=0;i--){
