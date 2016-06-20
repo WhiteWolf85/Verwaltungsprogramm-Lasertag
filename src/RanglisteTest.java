@@ -21,6 +21,7 @@ public class RanglisteTest {
     @Before
     public void startTest(){
 
+        // initiiert die globalen Listen, da auf die Konstruktoren von Spieler und Team zugegriffen werden muss
         Main.setGlobalValues();
 
         whiteWolf = new Spieler();

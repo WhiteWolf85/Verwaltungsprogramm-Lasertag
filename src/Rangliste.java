@@ -12,7 +12,7 @@ public class Rangliste implements RanglisteInterface {
         return this.getSortedList(list,false);
     }
 
-    // Sortiere übergebene Liste vom Typ Sortable und gib sie als ArrayList<? extends sortable> wieder sortiert zurück
+    // Sortiere übergebene Liste vom Typ Sortable mit Bubblesort und gib sie als ArrayList<? extends sortable> wieder sortiert zurück
     // falls reverseSort auf True gesetzt wurde, drehe die Liste um
     @Override
     public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean reverseSort){
@@ -27,6 +27,7 @@ public class Rangliste implements RanglisteInterface {
                         puffer = list.get(i);
                         list.set(i,list.get(i + 1));
                         list.set(i + 1,puffer);
+                        // Falls die Reihenfolge korrekt ist, wird nicht mehr in diese IF gesprungen. sort bleibt auf false und while-Schleife ist beendet
                         sort = true;
                 }
             }
