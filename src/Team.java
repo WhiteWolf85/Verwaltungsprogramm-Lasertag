@@ -63,6 +63,7 @@ public class Team implements TeamInterface, Sortable {
             //teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
             //teamlos.teamMember++;
             teamloseSpieler.add(team.spieler[i]);
+            team.teamMember--;
         }
         if (team.teamMember == 0) {
             team = null;
