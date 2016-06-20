@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <Accordion prefHeight="316.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+         <panes>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 7" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 8" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 9" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 10" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 11" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 12" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+         </panes>
+      </Accordion>
+   </right>
+   <left>
+      <Accordion prefHeight="316.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 1" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 2" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 3" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 4" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 5" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+            <TitledPane alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="50.0" prefWidth="201.0" text="Weste 6" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
