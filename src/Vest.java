@@ -21,6 +21,7 @@ public class Vest implements VestInterface {
     private int score;
     private int hits;
     private int hitsby;
+    private String status;
 
     public int getVestNumber() {
         return this.vestNumber;
@@ -38,17 +39,12 @@ public class Vest implements VestInterface {
         return this.hitsby;
     }
 
-
-
-    @Override
     public String getStatus() {
-        return null;
+        return this.status;
     }
-    @Override
     public void setStatus(String status) {
-
+        this.status = status;
     }
-
 
     public void setVestNumber(int vestId) {
         this.vestNumber = vestId;
