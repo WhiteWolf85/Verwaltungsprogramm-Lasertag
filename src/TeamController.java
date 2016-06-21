@@ -1,4 +1,5 @@
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -73,7 +74,12 @@ public class TeamController {
             if(val.getTeamName().equals(result)){
                 teamName.setText(val.getTeamName());
                 teamScore.setText(String.valueOf(val.getScore()));
-                players.setItems(FXCollections.observableArrayList(val.getSpieler()));
+                Spieler[] player = val.getSpieler();
+                ArrayList<String> liste = new ArrayList<String>();
+                for(Spieler vel: player) {
+                    liste.add(vel.getNickName());
+                }
+                players.setItems(FXCollections.observableArrayList(liste));
             }
         }
     }
