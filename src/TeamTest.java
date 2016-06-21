@@ -43,14 +43,20 @@ public class TeamTest {
         team1.addToTeam(sonic);
         team1.addToTeam(hotShotGG);
         team1.addToTeam(cornisier);
-/*
-        reitermaniac.score = 200;
-        whiteWolf.score = 150;
-        bloodyMary.score = 150;
-        sonic.score = 200;
-        hotShotGG.score = 200;
-        cornisier.score = 100;
-*/
+
+        reitermaniac.updateScore(16,5); //Score: 65
+        whiteWolf.updateScore(12,6);    //Score: 42
+        bloodyMary.updateScore(14,9);   //Score: 43
+        sonic.updateScore(27,16);       //Score: 87
+        hotShotGG.updateScore(19,8);    //Score: 71
+        cornisier.updateScore(12,14);   //Score: 18
+                                        //SumScore: 326
+        reitermaniac.getScore();
+        whiteWolf.getScore();
+        bloodyMary.getScore();
+        sonic.getScore();
+        hotShotGG.getScore();
+        cornisier.getScore();
 
     }
 
@@ -89,7 +95,7 @@ public class TeamTest {
             players[i] = team1.getSpieler()[i];
         }
         team1.sumScore(players);
-        assertEquals("Score = 1000", team1.getTeamScore(),1000);
+        assertEquals("Score = 326", team1.getTeamScore(),326);
     }
 
     @Test

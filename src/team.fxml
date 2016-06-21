@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -27,20 +26,15 @@
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="211.0" />
                     </columnConstraints>
                     <rowConstraints>
-                        <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="157.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="154.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="127.0" minHeight="5.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="128.0" minHeight="5.0" prefHeight="95.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <ImageView fx:id="logo" fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+                        <Label prefHeight="20.0" prefWidth="50.0" text="Team:" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
                             <GridPane.margin>
-                                <Insets left="85.0" right="85.0" top="25.0" />
-                            </GridPane.margin>
-                        </ImageView>
-                        <Label text="Team:" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-                            <GridPane.margin>
-                                <Insets left="10.0" top="5.0" />
+                                <Insets left="10.0" top="10.0" />
                             </GridPane.margin>
                         </Label>
                         <Label prefHeight="21.0" prefWidth="76.0" text="Members:" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
@@ -48,21 +42,24 @@
                                 <Insets left="10.0" top="5.0" />
                             </GridPane.margin>
                         </Label>
-                        <Label fx:id="teamName" text="Score:" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+                        <Label prefHeight="20.0" prefWidth="50.0" text="Score:" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
                             <GridPane.margin>
-                                <Insets left="10.0" top="10.0" />
+                                <Insets left="10.0" top="30.0" />
                             </GridPane.margin>
                         </Label>
                         <ListView fx:id="players" prefHeight="166.0" prefWidth="211.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="2">
                             <GridPane.margin>
                                 <Insets right="5.0" />
                             </GridPane.margin></ListView>
-                        <Label fx:id="teamScore" prefHeight="36.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+                        <Label fx:id="teamScore" prefHeight="20.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
                             <GridPane.margin>
-                                <Insets bottom="10.0" />
+                                <Insets bottom="10.0" top="29.0" />
                             </GridPane.margin>
                         </Label>
-                        <Label prefHeight="21.0" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="teamName" prefHeight="20.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+                     <GridPane.margin>
+                        <Insets top="11.0" />
+                     </GridPane.margin></Label>
                     </children>
                 </GridPane>
             </children></AnchorPane>
