@@ -35,19 +35,16 @@ public class MatchController{
     private static int playedMatches;
 
     public void initialize(){
-        /*
-        Team beamforce=new Team("Beamforce");
-        Team btb=new Team("BTB");
 
         games.setText(Integer.toString(playedMatches));
 
         team1.setItems(FXCollections.observableArrayList(Main.globalTeams));
         team2.setItems(FXCollections.observableArrayList(Main.globalTeams));
-        */
+
     }
 
     public void startGame(ActionEvent event){
-
+/*
         //Testwerte
         Team beamforce=(Team)team1.getValue();
         Team btb=(Team)team2.getValue();
@@ -72,10 +69,12 @@ public class MatchController{
         btb.addToTeam(s3);
         btb.addToTeam(s4);
 
-        Team team1=(Team)this.team1.getValue();
-        Team team2=(Team)this.team2.getValue();
+
 
         //Ende Testwerte
+*/
+        Team team1=(Team)this.team1.getValue();
+        Team team2=(Team)this.team2.getValue();
 
         resultTeam1.setText("");
         resultTeam2.setText("");
