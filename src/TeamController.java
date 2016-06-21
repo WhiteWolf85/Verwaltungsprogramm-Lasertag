@@ -48,6 +48,7 @@ public class TeamController {
         }
 
         teamList.setItems(teamNames);
+        add();
     }
 
     public void add(){
