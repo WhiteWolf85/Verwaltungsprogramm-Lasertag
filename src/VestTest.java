@@ -47,15 +47,15 @@ public class VestTest {
     @Test
     public void getStatus() throws Exception {
         Vest vest6 = new Vest();
-        vest6.setStatus("Aufladen");
-        assertEquals("Aufladen", vest6.getStatus());
+        vest6.setStatus("ready");
+        assertEquals("ready", vest6.getStatus());
     }
 
     @Test
     public void setStatus() throws Exception {
         Vest vest6 = new Vest();
-        vest6.setStatus("Aufladen");
-        assertEquals("Aufladen", vest6.getStatus());
+        vest6.setStatus("defect");
+        assertEquals("defect", vest6.getStatus());
     }
 
     @Test

@@ -34,22 +34,22 @@ public class VestController {
     private ListView vest12;
 
     public void initialize(){
-        Vest vest1 = new Vest (1, 62.5, 16, 5, 3, "ready");
-        Vest vest2 = new Vest (2, 70.0, 26, 7, 3, "ready");
-        Vest vest3 = new Vest (3, 70.0, 104, 28, 12, "loading");
+        Vest vest1 = new Vest (1, (float) 62.5, 16, 5, 3, "ready");
+        Vest vest2 = new Vest (2, (float) 70.0, 26, 7, 3, "ready");
+        Vest vest3 = new Vest (3, (float) 70.0, 104, 28, 12, "loading");
         Vest vest4 = new Vest (4, 0, -189, 0, 63, "defect");
-        Vest vest5 = new Vest (5, 70.0, 26, 7, 3, "ready");
-        Vest vest6 = new Vest (6, 70.0, 26, 7, 3, "ready");
-        Vest vest7 = new Vest (7, 70.0, 26, 7, 3, "ready");
+        Vest vest5 = new Vest (5, (float) 70.0, 26, 7, 3, "ready");
+        Vest vest6 = new Vest (6, (float) 70.0, 26, 7, 3, "ready");
+        Vest vest7 = new Vest (7, (float) 70.0, 26, 7, 3, "ready");
         Vest vest8 = new Vest (8, 0, -189, 0, 63, "defect");
-        Vest vest9 = new Vest (9, 70.0, 26, 7, 3, "ready");
-        Vest vest10 = new Vest (10, 70.0, 26, 7, 3, "ready");
-        Vest vest11 = new Vest (11, 70.0, 26, 7, 3, "ready");
-        Vest vest12 = new Vest (12, 70.0, 26, 7, 3, "ready");
+        Vest vest9 = new Vest (9, (float) 70.0, 26, 7, 3, "ready");
+        Vest vest10 = new Vest (10, (float) 70.0, 26, 7, 3, "ready");
+        Vest vest11 = new Vest (11, (float) 70.0, 26, 7, 3, "ready");
+        Vest vest12 = new Vest (12, (float) 70.0, 26, 7, 3, "ready");
 
         ObservableList<String> vestNumbers= FXCollections.observableArrayList();
         for (Vest val:Main.globalVests){
-            vestNumbers.add(val.vestNumber);
+            vestNumbers.add(Integer.toString(val.getVestNumber()));
         }
     }
 
