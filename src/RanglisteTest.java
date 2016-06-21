@@ -9,55 +9,34 @@ import static org.junit.Assert.*;
  */
 public class RanglisteTest {
 
-    Team beamforce = new Team("Beamforce");
-    Team btb = new Team("BTB");
-    Spieler whiteWolf = new Spieler();
-    Spieler bloodyMary = new Spieler();
-    Spieler reitermaniac=new Spieler();
-    Spieler pg = new Spieler();
-    Spieler tine = new Spieler();
-    Rangliste sort=new Rangliste();
+    Team beamforce;
+    Team btb;
+    Spieler whiteWolf;
+    Spieler bloodyMary;
+    Spieler reitermaniac;
+    Spieler pg;
+    Spieler tine;
+    Rangliste sort;
 
     @Before
     public void startTest(){
 
+        Main.setGlobalValues();
+
+        beamforce = new Team("Beamforce");
+        btb = new Team("BTB");
+        whiteWolf = new Spieler("Franz",30,"WhiteWolf",beamforce,"Mittelfeld","aktiv");
+        bloodyMary = new Spieler("Franz",30,"WhiteWolf",beamforce,"Mittelfeld","aktiv");
+        reitermaniac=new Spieler("Franz",30,"WhiteWolf",beamforce,"Mittelfeld","aktiv");
+        pg = new Spieler();
+        tine = new Spieler();
+        sort=new Rangliste();
+
+
         beamforce.setTeamName("Beamforce ONE");
         btb.setTeamName("BTB");
 
-        whiteWolf.age=30;
-        whiteWolf.name="Franz";
-        whiteWolf.status="aktiv";
-        whiteWolf.nickName="White Wolf";
-        whiteWolf.setRole("Mittelfeld");
-        whiteWolf.score=9001;               //over 9000 ;-)
 
-        bloodyMary.age=20;
-        bloodyMary.name="Anna";
-        bloodyMary.status="aktiv";
-        bloodyMary.nickName="Bloody Mary";
-        bloodyMary.setRole("Runner");
-        bloodyMary.score=689;
-
-        reitermaniac.age=20;
-        reitermaniac.name="Tom";
-        reitermaniac.status="aktiv";
-        reitermaniac.nickName="Reitermaniac";
-        reitermaniac.setRole("Runner");
-        reitermaniac.score=800;
-
-        pg.age=23;
-        pg.name="PG";
-        pg.status="aktiv";
-        pg.nickName="PG";
-        pg.setRole("Runner");
-        pg.score=-30;
-
-        tine.age=21;
-        tine.name="Tine";
-        tine.status="verletzt";
-        tine.nickName="Tine";
-        tine.setRole("Mittelfeld");
-        tine.score=50;
 
         //beamforce.addToTeam(whiteWolf,beamforce);
         //beamforce.addToTeam(bloodyMary,beamforce);

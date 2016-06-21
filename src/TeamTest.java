@@ -44,12 +44,6 @@ public class TeamTest {
         team1.addToTeam(hotShotGG);
         team1.addToTeam(cornisier);
 
-        reitermaniac.score = 200;
-        whiteWolf.score = 150;
-        bloodyMary.score = 150;
-        sonic.score = 200;
-        hotShotGG.score = 200;
-        cornisier.score = 100;
 
 
     }

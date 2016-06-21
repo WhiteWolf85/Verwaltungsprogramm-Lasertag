@@ -36,8 +36,8 @@ public class Main extends Application {
         URL menuLink = getClass().getResource("menu.fxml");
         Pane menu = FXMLLoader.load( menuLink );
 
-        URL paneOneUrl = getClass().getResource("team.fxml");
-        SplitPane paneOne = FXMLLoader.load( paneOneUrl );
+        URL paneOneUrl = getClass().getResource("match.fxml");
+        Pane paneOne = FXMLLoader.load( paneOneUrl );
 
         setGlobalValues();
 

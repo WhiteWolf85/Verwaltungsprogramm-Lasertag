@@ -15,7 +15,7 @@ public class TeamController {
     public void initialize(){
         ObservableList<String> playerNames= FXCollections.observableArrayList();
         for(Spieler val:Main.globalPlayers){
-            playerNames.add(val.nickName);
+            playerNames.add(val.getNickName());
         }
 
         teamList.setItems(playerNames);

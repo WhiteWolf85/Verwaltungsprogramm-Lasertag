@@ -55,5 +55,6 @@ public class Spieler implements SpielerInterface, Sortable{
     public Spieler getSpieler(){return this.spieler;}
     public void setStatus(String status){this.status = status;}
     public void setRole(String role){this.role = role;}
+    public String getNickName(){return nickName;}
 
 }
