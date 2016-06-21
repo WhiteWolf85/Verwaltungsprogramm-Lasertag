@@ -43,19 +43,25 @@ public class TeamTest {
         team1.addToTeam(sonic);
         team1.addToTeam(hotShotGG);
         team1.addToTeam(cornisier);
-
-
+/*
+        reitermaniac.score = 200;
+        whiteWolf.score = 150;
+        bloodyMary.score = 150;
+        sonic.score = 200;
+        hotShotGG.score = 200;
+        cornisier.score = 100;
+*/
 
     }
 
     @Test
     public void testAddToTeam() throws Exception {
-        assertEquals("Erwartet Reitermaniac",team1.spieler[0],reitermaniac);
-        assertEquals("Erwartet White Wholf",team1.spieler[1],whiteWolf);
-        assertEquals("Erwartet Bloody Mary", team1.spieler[2],bloodyMary);
-        assertEquals("Erwartet Sonic", team1.spieler[3],sonic);
-        assertEquals("Erwartet HotShotGG", team1.spieler[4],hotShotGG);
-        assertEquals("Erwartet Cornisier", team1.spieler[5],cornisier);
+        assertEquals("Erwartet Reitermaniac",team1.getSpieler()[0],reitermaniac);
+        assertEquals("Erwartet White Wholf",team1.getSpieler()[1],whiteWolf);
+        assertEquals("Erwartet Bloody Mary", team1.getSpieler()[2],bloodyMary);
+        assertEquals("Erwartet Sonic", team1.getSpieler()[3],sonic);
+        assertEquals("Erwartet HotShotGG", team1.getSpieler()[4],hotShotGG);
+        assertEquals("Erwartet Cornisier", team1.getSpieler()[5],cornisier);
         assertEquals("Spieleranzahl = 6",team1.getTeamMember(),6);
     }
 
@@ -80,7 +86,7 @@ public class TeamTest {
     public void testSumScore() throws Exception {
         Spieler[] players = new Spieler[6];
         for (int i = 0; i < players.length; i++){
-            players[i] = team1.spieler[i];
+            players[i] = team1.getSpieler()[i];
         }
         team1.sumScore(players);
         assertEquals("Score = 1000", team1.getTeamScore(),1000);

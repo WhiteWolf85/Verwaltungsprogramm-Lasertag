@@ -91,7 +91,7 @@ public class MatchController{
                 int vestCount=0;
                 int result=0;
 
-                for(Spieler player:team1.spieler){
+                for(Spieler player:team1.getSpieler()){
                     //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
                     playerScore=r.nextInt(900) - 450;
                     detailResultTeam1.setText(detailResultTeam1.getText()+player.getNickName()+":"+playerScore+"\n");
@@ -101,7 +101,7 @@ public class MatchController{
                 resultTeam1.setText(Integer.toString(result));
                 result=0;
 
-                for(Spieler player:team2.spieler){
+                for(Spieler player:team2.getSpieler()){
                     //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
                     playerScore=r.nextInt(900) - 450;
                     result+=playerScore;
