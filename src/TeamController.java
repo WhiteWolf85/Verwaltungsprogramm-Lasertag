@@ -50,17 +50,6 @@ public class TeamController {
         teamList.setItems(teamNames);
     }
 
-    public void addImage(){
-        //team 1 Teamlogo zuweisen
-        ImageView teamLogo = new ImageView();
-        teamLogo.setImage(new Image("../TeamLogos/BF.jpg"));
-        team1.setTeamLogo(teamLogo);
-        //team2 Teamlogo zuweisen
-        ImageView teamLogo2 = new ImageView();
-        teamLogo.setImage(new Image("../TeamLogos/Arrows.jpg"));
-        team2.setTeamLogo(teamLogo2);
-    }
-
     public void showDetails(){
         String result = teamList.getSelectionModel().getSelectedItem();
         for(Team val:Main.globalTeams){
