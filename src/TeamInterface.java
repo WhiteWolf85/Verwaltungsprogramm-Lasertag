@@ -1,3 +1,5 @@
+import javafx.scene.image.ImageView;
+
 import java.awt.*;
 
 /**
@@ -10,9 +12,10 @@ interface TeamInterface {
     //void addTeam();
     void removeTeam(Team team);
     void addToTeam(Spieler spieler);
+    void removeFromTeam(Spieler spieler, Team team);
     int gamesPlayed(Team team);
     String toString();
-    Image teamImage(Image teamLogo);
+    ImageView teamImage(ImageView teamLogo);
 
     //Getter
     String getTeamName();
@@ -21,9 +24,11 @@ interface TeamInterface {
     int getTeamMember();
     Team getTeam();
     int getTeamCounter();
+    ImageView getTeamLogo();
 
     //Setter
     void setTeamName(String teamName);
     void setTeam(Team team);
+    void setTeamLogo(ImageView teamLogo);
 }
 

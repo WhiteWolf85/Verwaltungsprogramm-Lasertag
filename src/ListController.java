@@ -46,7 +46,7 @@ public class ListController {
         whiteWolf.setRole("Mittelfeld");
         whiteWolf.score = 9001;               //over 9000 ;-)
 
-        bloodyMary.age = 25;
+        bloodyMary.age = 20;
         bloodyMary.name = "Anna";
         bloodyMary.status = "aktiv";
         bloodyMary.nickName = "Bloody Mary";

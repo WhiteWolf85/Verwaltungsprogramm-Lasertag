@@ -18,7 +18,6 @@ public class Spieler implements SpielerInterface, Sortable{
         private float ratio;
         private Spieler spieler;
 
-
     public Spieler(){
 
     }
@@ -33,9 +32,7 @@ public class Spieler implements SpielerInterface, Sortable{
         this.status = status;
         Main.globalPlayers.add(this);
     }
-
-    //Wird nicht benötigt, da wir den Spieler ja keinen Spieler hinzufügen können/wollen. Das instanzierte Objekt ist ja genau EIN Spieler
-    /*
+/*
     public void addSpieler() {
         Spieler spieler = new Spieler();
         Scanner scanner = new Scanner(System.in);
@@ -49,9 +46,6 @@ public class Spieler implements SpielerInterface, Sortable{
         ratio = (float) this.hits / this.hitsBy;  //calculates new ratio
         gameCounter ++;
     }
-
-    //Da die Werte oben eh alle public sind, werden die Getter und Setter nicht benötigt, da man sie einfach von außen beschreiben könnte
-    // -> Variablen oben auf private stellen
 
     public long getScore(){return score;}
     public float getRatio(){return ratio;}

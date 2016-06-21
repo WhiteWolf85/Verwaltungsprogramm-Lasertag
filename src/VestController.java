@@ -1,4 +1,7 @@
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
 
 /**
  * Created by anna on 20.06.16.
@@ -6,29 +9,49 @@ import javafx.fxml.FXML;
 public class VestController {
 
     @FXML
-    private int vest1;
+    private ListView vest1;
     @FXML
-    private int vest2;
+    private ListView vest2;
     @FXML
-    private int vest3;
+    private ListView vest3;
     @FXML
-    private int vest4;
+    private ListView vest4;
     @FXML
-    private int vest5;
+    private ListView vest5;
     @FXML
-    private int vest6;
+    private ListView vest6;
     @FXML
-    private int vest7;
+    private ListView vest7;
     @FXML
-    private int vest8;
+    private ListView vest8;
     @FXML
-    private int vest9;
+    private ListView vest9;
     @FXML
-    private int vest10;
+    private ListView vest10;
     @FXML
-    private int vest11;
+    private ListView vest11;
     @FXML
-    private int vest12;
+    private ListView vest12;
+
+    public void initialize(){
+        Vest vest1 = new Vest (1, 62.5, 16, 5, 3, "ready");
+        Vest vest2 = new Vest (2, 70.0, 26, 7, 3, "ready");
+        Vest vest3 = new Vest (3, 70.0, 104, 28, 12, "loading");
+        Vest vest4 = new Vest (4, 0, -189, 0, 63, "defect");
+        Vest vest5 = new Vest (5, 70.0, 26, 7, 3, "ready");
+        Vest vest6 = new Vest (6, 70.0, 26, 7, 3, "ready");
+        Vest vest7 = new Vest (7, 70.0, 26, 7, 3, "ready");
+        Vest vest8 = new Vest (8, 0, -189, 0, 63, "defect");
+        Vest vest9 = new Vest (9, 70.0, 26, 7, 3, "ready");
+        Vest vest10 = new Vest (10, 70.0, 26, 7, 3, "ready");
+        Vest vest11 = new Vest (11, 70.0, 26, 7, 3, "ready");
+        Vest vest12 = new Vest (12, 70.0, 26, 7, 3, "ready");
+
+        ObservableList<String> vestNumbers= FXCollections.observableArrayList();
+        for (Vest val:Main.globalVests){
+            vestNumbers.add(val.vestNumber);
+        }
+    }
 
 
 }

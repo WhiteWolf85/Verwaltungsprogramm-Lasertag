@@ -27,8 +27,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        setGlobalValues();
-
         root = FXMLLoader.load(getClass().getResource("main.fxml"));
         primaryStage.setTitle("LaserTag Verwaltungsprogramm");
         primaryStage.setScene(new Scene(root));
@@ -38,18 +36,17 @@ public class Main extends Application {
         URL menuLink = getClass().getResource("menu.fxml");
         Pane menu = FXMLLoader.load( menuLink );
 
-        URL paneOneUrl = getClass().getResource("match.fxml");
-        Pane paneOne = FXMLLoader.load( paneOneUrl );
+        URL paneOneUrl = getClass().getResource("team.fxml");
+        SplitPane paneOne = FXMLLoader.load( paneOneUrl );
 
-
+        setGlobalValues();
 
         root.setLeft(menu);
         root.setCenter(paneOne);
 
     }
 
-    static void setGlobalValues(){
-
+    public static void setGlobalValues(){
         globalPlayers=new ArrayList<Spieler>();
         globalTeams=new ArrayList<Team>();
         globalVests=new ArrayList<Vest>();

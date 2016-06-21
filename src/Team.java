@@ -1,3 +1,6 @@
+import javafx.scene.image.ImageView;
+import sun.security.provider.ConfigFile;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -19,13 +22,13 @@ public class Team implements TeamInterface, Sortable {
     private int gameCounter;
     private int teamMember;
     private Team team;
-    private Image teamLogo;
+    private ImageView teamLogo;
     private static int teamCounter = 0;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
-    Spieler[] spieler;
-
+    Spieler[] spieler = new Spieler[6];
+    List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
 
     //Team für Spieler ohne Team
     //Muss in main, da in der Klasse keine Funktion
@@ -59,11 +62,10 @@ public class Team implements TeamInterface, Sortable {
 
     //Entfernt ein Team und fügt die Spieler einer Arraylist hinzu, die alle Spieler sammelt, die "Teamlos" sind
     public void removeTeam(Team team) {
-        List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
-        for (int i = 0; i < team.teamMember; i++) {
+        for (int i = team.teamMember; i > 0; i--) {
             //teamlos.spieler[teamlos.teamMember + 1] = team.spieler[i];
             //teamlos.teamMember++;
-            teamloseSpieler.add(team.spieler[i]);
+            teamloseSpieler.add(team.spieler[i-1]);
             team.teamMember--;
         }
         if (team.teamMember == 0) {
@@ -73,8 +75,20 @@ public class Team implements TeamInterface, Sortable {
 
     //Fügt Spieler an ein Team an
     public void addToTeam(Spieler spieler) {
-        this.teamMember++;
         this.spieler[this.teamMember] = spieler;
+        this.teamMember++;
+    }
+
+    public void removeFromTeam(Spieler spieler, Team team){
+        for (int i = 0; i<team.teamMember;i++){
+            if (team.spieler[i].equals(spieler)){
+                teamloseSpieler.add(team.spieler[i]);
+                team.teamMember--;
+                for(int j = i; j < team.teamMember; j++){
+                    team.spieler[j] = team.spieler[j+1];
+                }
+            }
+        }
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
@@ -86,8 +100,8 @@ public class Team implements TeamInterface, Sortable {
         return this.teamScore;
     }
 
-    public Image teamImage(Image teamLogo) {
-        Image image = teamLogo;
+    public ImageView teamImage(ImageView teamLogo) {
+        ImageView image = teamLogo;
         return image;
     }
 
@@ -122,11 +136,19 @@ public class Team implements TeamInterface, Sortable {
         return teamCounter;
     }
 
+    public ImageView getTeamLogo() {
+        return teamLogo;
+    }
+
     public void setTeamName(String teamName) {
         this.teamName = teamName;
     }
 
     public void setTeam(Team team) {
         this.team = team;
+    }
+
+    public void setTeamLogo(ImageView teamLogo) {
+        this.teamLogo = teamLogo;
     }
 }
