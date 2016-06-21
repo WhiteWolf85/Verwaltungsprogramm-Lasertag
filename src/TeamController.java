@@ -66,6 +66,26 @@ public class TeamController {
         team2.addToTeam(s4);
         team2.addToTeam(s5);
         team2.addToTeam(s6);
+
+        reitermaniac.updateScore(16,5); //Score: 65
+        whiteWolf.updateScore(12,6);    //Score: 42
+        bloodyMary.updateScore(14,9);   //Score: 43
+        sonic.updateScore(27,16);       //Score: 87
+        hotShotGG.updateScore(19,8);    //Score: 71
+        cornisier.updateScore(12,14);   //Score: 18
+        //SumScore: 326
+        reitermaniac.getScore();
+        whiteWolf.getScore();
+        bloodyMary.getScore();
+        sonic.getScore();
+        hotShotGG.getScore();
+        cornisier.getScore();
+
+        Spieler[] players = new Spieler[6];
+        for (int i = 0; i < players.length; i++){
+            players[i] = team1.getSpieler()[i];
+        }
+        team1.sumScore(players);
     }
 
     public void showDetails(){
