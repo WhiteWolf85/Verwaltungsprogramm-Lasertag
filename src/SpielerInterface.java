@@ -3,8 +3,7 @@
  */
 public interface SpielerInterface {
 
-     void Spieler(String name, int age, String nickName, Team team, String role, String status);
-     void addSpieler();
+
      void updateScore(int dH, int rH);
      long getScore();
      float getRatio();

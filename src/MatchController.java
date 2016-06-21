@@ -15,7 +15,7 @@ import java.util.Random;
 /**
  * Created by franz on 20.05.16.
  */
-public class MatchController implements MatchInterface{
+public class MatchController{
 
     @FXML
     private ChoiceBox team1;

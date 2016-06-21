@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface RanglisteInterface {
 
-    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean reverseSort);
+    public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list, boolean way);
     public ArrayList<? extends Sortable> getSortedList(ArrayList<Sortable> list);
 
 }
