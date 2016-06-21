@@ -12,6 +12,17 @@ public class Vest implements VestInterface {
     private int hitsby;
     private String status;
 
+    //Konstruktor
+    public Vest (int vestNumber, float ratio, int score, int hits, int hitsby, String status) {
+        this.vestNumber = vestNumber;
+        this.ratio = ratio;
+        this.score = score;
+        this.hits = hits;
+        this.hitsby = hitsby;
+        this.status = status;
+        Main.globalVests.add(this);
+    }
+
     public int getVestNumber() {
         return this.vestNumber;
     }
@@ -52,9 +63,7 @@ public class Vest implements VestInterface {
 
 
 
-    public void Vest(){
-        Main.globalVests.add(this);
-    }
+
 
     public void calculateScore () {
         this.score = (this.hits * 5) - (this.hitsby * 3);
