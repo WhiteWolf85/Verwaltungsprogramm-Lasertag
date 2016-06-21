@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -11,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<SplitPane dividerPositions="0.13316582914572864" fx:controller="SpielerController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane fx:id="SpielerController" dividerPositions="0.13316582914572864" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="732.0">
          <children>
@@ -31,7 +30,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ListView fx:id="PlayerList" prefHeight="147.0" prefWidth="137.0" GridPane.rowIndex="1">
+                  <ListView fx:id="PlayerList" onAction="#ReactToButtonClick" prefHeight="147.0" prefWidth="137.0" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
                      </GridPane.margin>
@@ -46,11 +45,6 @@
                         <Insets left="150.0" right="140.0" />
                      </GridPane.margin>
                   </Label>
-                  <Slider orientation="VERTICAL" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <GridPane.margin>
-                        <Insets left="12.0" right="15.0" />
-                     </GridPane.margin>
-                  </Slider>
                   <HBox prefHeight="72.0" prefWidth="631.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                   <GridPane prefHeight="240.0" prefWidth="612.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                     <columnConstraints>
