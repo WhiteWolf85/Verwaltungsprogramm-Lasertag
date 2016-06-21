@@ -15,6 +15,8 @@ public class SpielerController {
     @FXML
     ListView<String> PlayerList;
     @FXML
+    Label label0;
+    @FXML
     Label label1;
     @FXML
     Label label2;
@@ -56,14 +58,19 @@ public class SpielerController {
         String result=PlayerList.getSelectionModel().getSelectedItem();;
         for(Spieler val:Main.globalPlayers){
             if(result.equals(val.getNickName())){
-                label1.setText(val.getName());
-                label2.setText(Integer.toString(val.getAge()));
-                label3.setText(val.getNickName());
-                label4.setText(val.)
+                label0.setText(val.getName());
+                label1.setText(Integer.toString(val.getAge()));
+                label2.setText(val.getNickName());
+                label3.setText(val.getTeam().getTeamName());
+                label4.setText(Integer.toString(val.getGames()));
+                label5.setText(val.getRole());
+                label6.setText(val.getStatus());
+                label7.setText(Long.toString(val.getScore()));
+                label8.setText(Float.toString(val.getRatio()));
             }
         }
 
-
+  /*
         label1.setText(PlayerList.);
         label2.setText();
         label3.setText();
@@ -72,6 +79,6 @@ public class SpielerController {
         label6.setText();
         label7.setText();
         label8.setText();
-
+*/
     }
 }
