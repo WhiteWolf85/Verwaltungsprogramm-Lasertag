@@ -6,6 +6,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import sun.security.provider.ConfigFile;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 /**
@@ -14,6 +15,13 @@ import java.util.ArrayList;
 public class TeamController {
     @FXML
     ListView<String> teamList;
+
+    @FXML
+    Label teamName;
+    @FXML
+    ListView players;
+    @FXML
+    Label teamScore;
 
     //Testwerte
     Team team1 = new Team("Beamforce One");
@@ -52,4 +60,16 @@ public class TeamController {
         teamLogo.setImage(new Image("../TeamLogos/Arrows.jpg"));
         team2.setTeamLogo(teamLogo2);
     }
+
+    public void showDetails(){
+        String result = teamList.getSelectionModel().getSelectedItem();
+        for(Team val:Main.globalTeams){
+            if(val.getTeamName().equals(result)){
+                teamName.setText(val.getTeamName());
+                teamScore.setText(String.valueOf(val.getScore()));
+                players.setItems(FXCollections.observableArrayList(val.getSpieler()));
+            }
+        }
+    }
+
 }

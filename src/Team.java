@@ -27,7 +27,7 @@ public class Team implements TeamInterface, Sortable {
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
-    Spieler[] spieler = new Spieler[6];
+    private Spieler[] spieler = new Spieler[6];
     List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
 
     //Team für Spieler ohne Team
@@ -126,6 +126,10 @@ public class Team implements TeamInterface, Sortable {
 
     public int getTeamMember() {
         return this.teamMember;
+    }
+
+    public Spieler[] getSpieler() {
+        return spieler;
     }
 
     public Team getTeam() {
