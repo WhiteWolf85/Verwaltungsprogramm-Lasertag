@@ -58,6 +58,6 @@ public class Spieler implements SpielerInterface, Sortable{
     public String getNickName(){return nickName;}
     public String getName(){return name;}
     public int getAge(){return age;}
-
+    public Team getTeam(){return team;}
 
 }
