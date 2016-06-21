@@ -19,8 +19,12 @@ public class Spieler implements SpielerInterface, Sortable{
         public Spieler spieler;
 
 
+    public Spieler(){
+
+    }
+
     //Constructor
-    public void Spieler(String name, int age, String nickName, Team team, String role, String status){
+    public Spieler(String name, int age, String nickName, Team team, String role, String status){
         this.name = name;
         this.age = age;
         this.nickName = nickName;
@@ -31,12 +35,13 @@ public class Spieler implements SpielerInterface, Sortable{
     }
 
     //Wird nicht benötigt, da wir den Spieler ja keinen Spieler hinzufügen können/wollen. Das instanzierte Objekt ist ja genau EIN Spieler
+    /*
     public void addSpieler() {
         Spieler spieler = new Spieler();
         Scanner scanner = new Scanner(System.in);
         spieler.name = scanner.nextLine();
     }
-
+*/
     public void updateScore(int H, int HB){    //Hits, HitsBy
         score = H * 5 - HB * 3;
         this.hits = hits + H;        //dealtHits are Hits overall, not just one game
