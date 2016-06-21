@@ -5,18 +5,18 @@ import java.util.Scanner;
  */
 public class Spieler implements SpielerInterface, Sortable{
 
-        public String name;
-        public int age;
-        public String nickName;
-        public Team team;
-        public int gameCounter = 0;
-        public String role;
-        public String status;
-        public long score;
-        public int hits;
-        public int hitsBy;
-        public float ratio;
-        public Spieler spieler;
+        private String name;
+        private int age;
+        private String nickName;
+        private Team team;
+        private int gameCounter = 0;
+        private String role;
+        private String status;
+        private long score;
+        private int hits;
+        private int hitsBy;
+        private float ratio;
+        private Spieler spieler;
 
 
     public Spieler(){
