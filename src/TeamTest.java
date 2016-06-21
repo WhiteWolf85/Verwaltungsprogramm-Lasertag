@@ -13,24 +13,36 @@ import static org.junit.Assert.*;
  */
 public class TeamTest {
 
-    Team team1 = new Team("Beamoforce One");
+    Team team1;
 
-    Spieler reitermaniac = new Spieler();
-    Spieler whiteWolf = new Spieler();
-    Spieler bloodyMary = new Spieler();
-    Spieler sonic = new Spieler();
-    Spieler hotShotGG = new Spieler();
-    Spieler cornisier = new Spieler();
+    Spieler reitermaniac;
+    Spieler whiteWolf;
+    Spieler bloodyMary;
+    Spieler sonic;
+    Spieler hotShotGG;
+    Spieler cornisier;
 
 
     @Before
     public void startTest(){
-        team1.addToTeam(reitermaniac, team1);
-        team1.addToTeam(whiteWolf, team1);
-        team1.addToTeam(bloodyMary, team1);
-        team1.addToTeam(sonic, team1);
-        team1.addToTeam(hotShotGG, team1);
-        team1.addToTeam(cornisier, team1);
+
+        Main.setGlobalValues();
+
+        team1 = new Team("Beamoforce One");
+
+        reitermaniac = new Spieler();
+        whiteWolf = new Spieler();
+        bloodyMary = new Spieler();
+        sonic = new Spieler();
+        hotShotGG = new Spieler();
+        cornisier = new Spieler();
+
+        team1.addToTeam(reitermaniac);
+        team1.addToTeam(whiteWolf);
+        team1.addToTeam(bloodyMary);
+        team1.addToTeam(sonic);
+        team1.addToTeam(hotShotGG);
+        team1.addToTeam(cornisier);
 
         reitermaniac.score = 200;
         whiteWolf.score = 150;
@@ -38,6 +50,8 @@ public class TeamTest {
         sonic.score = 200;
         hotShotGG.score = 200;
         cornisier.score = 100;
+
+
     }
 
     @Test

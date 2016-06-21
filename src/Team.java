@@ -40,7 +40,7 @@ public class Team implements TeamInterface, Sortable {
         this.teamScore = 0;
         this.gameCounter = 0;
         this.teamMember = 0;
-        //Main.globalTeams.add(this);
+        Main.globalTeams.add(this);
         teamCounter++;
     }
 
@@ -74,9 +74,9 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Fügt Spieler an ein Team an
-    public void addToTeam(Spieler spieler, Team team) {
-        team.spieler[team.teamMember] = spieler;
-        team.teamMember++;
+    public void addToTeam(Spieler spieler) {
+        this.spieler[this.teamMember] = spieler;
+        this.teamMember++;
     }
 
     public void removeFromTeam(Spieler spieler, Team team){
