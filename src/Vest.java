@@ -2,7 +2,6 @@
  * Created by anna on 16.05.16.
  */
 
-
 public class Vest implements VestInterface {
 
     private int vestNumber;
@@ -10,7 +9,10 @@ public class Vest implements VestInterface {
     private int score;
     private int hits;
     private int hitsby;
-    private String status;
+
+    public void Vest(){
+        Main.globalVests.add(this);
+    }
 
     public int getVestNumber() {
         return this.vestNumber;
@@ -28,12 +30,7 @@ public class Vest implements VestInterface {
         return this.hitsby;
     }
 
-    public String getStatus() {
-        return this.status;
-    }
-    public void setStatus(String status) {
-        this.status = status;
-    }
+
 
     public void setVestNumber(int vestId) {
         this.vestNumber = vestId;
@@ -41,7 +38,7 @@ public class Vest implements VestInterface {
     public void setRatio(float vestRatio) {
         this.ratio = vestRatio;
     }
-    //kein setScore, da nur lesbar, nicht veränderbar
+//kein setScore, da nur lesbar, nicht veränderbar
     public void setHits(int dealtHits) {
         this.hits = dealtHits;
     }
@@ -52,10 +49,7 @@ public class Vest implements VestInterface {
 
 
 
-    public void Vest(){
-        Main.globalVests.add(this);
-    }
-
+    //kommen später in main!
     public void calculateScore () {
         this.score = (this.hits * 5) - (this.hitsby * 3);
     }
