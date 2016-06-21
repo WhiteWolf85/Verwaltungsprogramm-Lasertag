@@ -50,6 +50,7 @@ public class TeamController {
         teamList.setItems(teamNames);
     }
 
+
     public void showDetails(){
         String result = teamList.getSelectionModel().getSelectedItem();
         for(Team val:Main.globalTeams){
