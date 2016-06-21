@@ -41,6 +41,22 @@ public class TeamController {
     Spieler s5 = new Spieler("Andi",19,"Apfel", team2, "Runner", "aktiv");
     Spieler s6 = new Spieler("Bernd", 30, "Berni", team2, "Runner", "aktiv");
 
+    public void add(){
+        team1.addToTeam(reitermaniac);
+        team1.addToTeam(whiteWolf);
+        team1.addToTeam(bloodyMary);
+        team1.addToTeam(sonic);
+        team1.addToTeam(hotShotGG);
+        team1.addToTeam(cornisier);
+
+        team2.addToTeam(s1);
+        team2.addToTeam(s2);
+        team2.addToTeam(s3);
+        team2.addToTeam(s4);
+        team2.addToTeam(s5);
+        team2.addToTeam(s6);
+    }
+
     public void initialize(){
         ObservableList<String> teamNames= FXCollections.observableArrayList();
         for(Team val:Main.globalTeams){
