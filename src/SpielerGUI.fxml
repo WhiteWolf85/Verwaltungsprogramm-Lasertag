@@ -109,7 +109,7 @@
                               <Insets left="5.0" />
                            </GridPane.margin>
                         </Label>
-                        <Label GridPane.columnIndex="1" />
+                        <Label fx:id="label0" GridPane.columnIndex="1" />
                         <Label fx:id="label1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Label fx:id="label2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <Label fx:id="label3" GridPane.columnIndex="1" GridPane.rowIndex="3" />

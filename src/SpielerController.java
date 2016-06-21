@@ -70,15 +70,6 @@ public class SpielerController {
             }
         }
 
-  /*
-        label1.setText(PlayerList.);
-        label2.setText();
-        label3.setText();
-        label4.setText();
-        label5.setText();
-        label6.setText();
-        label7.setText();
-        label8.setText();
-*/
+
     }
 }
