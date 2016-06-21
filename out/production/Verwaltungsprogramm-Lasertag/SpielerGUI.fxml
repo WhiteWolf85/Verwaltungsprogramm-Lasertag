@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
@@ -10,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<SplitPane fx:id="SpielerController" dividerPositions="0.13316582914572864" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.13316582914572864" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpielerController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="732.0">
          <children>
@@ -30,7 +31,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ListView fx:id="PlayerList" onAction="#ReactToButtonClick" prefHeight="147.0" prefWidth="137.0" GridPane.rowIndex="1">
+                  <ListView fx:id="PlayerList" prefHeight="147.0" prefWidth="137.0" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
                      </GridPane.margin>
@@ -108,8 +109,22 @@
                               <Insets left="5.0" />
                            </GridPane.margin>
                         </Label>
+                        <Label GridPane.columnIndex="1" />
+                        <Label fx:id="label1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="label2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="label3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="label4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="label5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="label6" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="label7" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="label8" GridPane.columnIndex="1" GridPane.rowIndex="8" />
                      </children>
                   </GridPane>
+                  <Button mnemonicParsing="false" onAction="#reactToButtonClick" text="Show Player Details" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="30.0" />
+                     </GridPane.margin>
+                  </Button>
                </children>
             </GridPane>
          </children></AnchorPane>
