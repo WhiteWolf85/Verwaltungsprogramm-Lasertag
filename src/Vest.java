@@ -2,17 +2,6 @@
  * Created by anna on 16.05.16.
  */
 
-/*
-ToDo:
-    -GUI mit dem SceneBuilder bauen. Einfach mal so, wie du sie dir vorstellst.
-     Um das Hinzufügen und entfernen der Westen brauchst du dir keine Gedanken machen. Die Initialisieren wir in der Main Methode
-    -Klasse VestController erstellen und in deiner GUI-fxml als Controller hinterlegen. (Mit fx:Controller="VestController" im Root Element deiner GUI)
-     Die Klasse selber kann erstmal leer bleiben. Da kümmern wir uns morgen drum.
-    -Schon mal versuchen, deine Testklasse zu bauen, und die Methoden der Vest Klasse testen.
-
-       PS: Du bist die Beste! :-p (Mitarbeitermotivation und so) :-p
- */
-
 
 public class Vest implements VestInterface {
 
