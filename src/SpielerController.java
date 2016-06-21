@@ -36,7 +36,7 @@ public class SpielerController {
 
     public void initialize(){
 
-        Spieler Tobias = new Spieler("Tobias", 19, "Bankhocker", null, null, "verletzt");
+        Spieler Tobias = new Spieler("Tobias", 19, "Ersatzbankhocker", null, null, "verletzt");
         Spieler Anna = new Spieler("Anna", 20, "Bloody Mary", null, "Runner", "aktiv");
         Spieler Tom = new Spieler("Tom", 20, "Reitermaniac", null, "Runner", "aktiv");
         Spieler Franz = new Spieler("Franz", 30, "White Wolf", null, "Mittelfeld", "aktiv");
@@ -52,7 +52,18 @@ public class SpielerController {
 
 
     public void reactToButtonClick(ActionEvent Event){
-/*
+
+        String result=PlayerList.getSelectionModel().getSelectedItem();;
+        for(Spieler val:Main.globalPlayers){
+            if(result.equals(val.getNickName())){
+                label1.setText(val.getName());
+                label2.setText(Integer.toString(val.getAge()));
+                label3.setText(val.getNickName());
+                label4.setText(val.)
+            }
+        }
+
+
         label1.setText(PlayerList.);
         label2.setText();
         label3.setText();
@@ -61,6 +72,6 @@ public class SpielerController {
         label6.setText();
         label7.setText();
         label8.setText();
-   */
+
     }
 }
