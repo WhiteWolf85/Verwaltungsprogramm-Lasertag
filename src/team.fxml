@@ -31,7 +31,7 @@
                   <RowConstraints maxHeight="127.0" minHeight="5.0" prefHeight="59.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+                  <ImageView fx:id="logo" fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
                      <GridPane.margin>
                         <Insets left="85.0" right="85.0" top="25.0" />
                      </GridPane.margin>
