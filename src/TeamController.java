@@ -50,6 +50,21 @@ public class TeamController {
         teamList.setItems(teamNames);
     }
 
+    public void add(){
+        team1.addToTeam(reitermaniac);
+        team1.addToTeam(whiteWolf);
+        team1.addToTeam(bloodyMary);
+        team1.addToTeam(sonic);
+        team1.addToTeam(hotShotGG);
+        team1.addToTeam(cornisier);
+
+        team2.addToTeam(s1);
+        team2.addToTeam(s2);
+        team2.addToTeam(s3);
+        team2.addToTeam(s4);
+        team2.addToTeam(s5);
+        team2.addToTeam(s6);
+    }
 
     public void showDetails(){
         String result = teamList.getSelectionModel().getSelectedItem();
