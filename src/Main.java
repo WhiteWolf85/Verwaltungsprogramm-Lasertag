@@ -58,7 +58,7 @@ public class Main extends Application {
         Team t2=new Team("BTB");
         Team t3=new Team("Redforce");
 
-        Spieler s1=new Spieler("Anna",20,"BloodyMary",t1,"Angriff","aktiv");
+        Spieler s1=new Spieler("Anna",25,"BloodyMary",t1,"Angriff","aktiv");
         Spieler s2=new Spieler("Franz",30,"WhiteWolf",t1,"Mittelfeld","aktiv");
         Spieler s3=new Spieler("Tom",20,"Reitermaniac",t1,"Angriff","aktiv");
 
@@ -66,8 +66,8 @@ public class Main extends Application {
         Spieler s5=new Spieler("Tine",21,"Tine",t2,"Mittelfeld","aktiv");
         Spieler s6=new Spieler("Patrick",22,"Nese",t2,"Verteidigung","aktiv");
 
-        Spieler s7=new Spieler("Andi",40,"Laseropa",t3,"Mittelfeld","aktiv");
-        Spieler s8=new Spieler("Ali",30,"Ali",t3,"Angriff","aktiv");
+        Spieler s7=new Spieler("Andi",46,"Laseropa",t3,"Mittelfeld","aktiv");
+        Spieler s8=new Spieler("Ali",20,"Ali",t3,"Angriff","aktiv");
         Spieler s9=new Spieler("Chris",20,"BlueFlash",t3,"Angriff","aktiv");
 
         Vest v1=new Vest();

@@ -30,13 +30,13 @@ public class TeamController {
 
     Spieler reitermaniac = new Spieler("Thomas",21,"Reitermaniac",team1,"Runner","aktiv"); //String name, int age, String nickName, Team team, String role, String status
     Spieler whiteWolf = new Spieler("Franz",30,"White Wolf", team1, "Mittelfeld","aktiv");
-    Spieler bloodyMary = new Spieler("Anna",25,"Boody Mary",team1,"Runner","aktiv");
+    Spieler bloodyMary = new Spieler("Anna",25,"Bloody Mary",team1,"Runner","aktiv");
     Spieler sonic = new Spieler("Max", 23,"Sonic",team1,"Runner","aktiv");
     Spieler hotShotGG = new Spieler("Tobi",23,"HotShotGG",team1,"Rampensau","aktiv");
-    Spieler cornisier = new Spieler("Chris",22,"Cornisier",team1,"Rechts","aktiv");
+    Spieler kornyser = new Spieler("Chris",22,"Kornyser",team1,"Rechts","aktiv");
 
     Spieler s1 = new Spieler("Ralf",20,"Blubb",team2,"Mittelfeld","aktiv");
-    Spieler s2 = new Spieler("Martin",25,"Commander",team2,"Links","aktiv");
+    Spieler s2 = new Spieler("Martin",27,"Commander",team2,"Links","aktiv");
     Spieler s3 = new Spieler("Patrick",22,"Banane",team2,"Rechts","aktiv");
     Spieler s4 = new Spieler("David", 20, "Frenchguy", team2, "Defensive", "aktiv");
     Spieler s5 = new Spieler("Andi",19,"Apfel", team2, "Runner", "aktiv");
@@ -58,7 +58,7 @@ public class TeamController {
         team1.addToTeam(bloodyMary);
         team1.addToTeam(sonic);
         team1.addToTeam(hotShotGG);
-        team1.addToTeam(cornisier);
+        team1.addToTeam(kornyser);
 
         team2.addToTeam(s1);
         team2.addToTeam(s2);
@@ -72,14 +72,14 @@ public class TeamController {
         bloodyMary.updateScore(14,9);   //Score: 43
         sonic.updateScore(27,16);       //Score: 87
         hotShotGG.updateScore(19,8);    //Score: 71
-        cornisier.updateScore(12,14);   //Score: 18
+        kornyser.updateScore(12,14);   //Score: 18
         //SumScore: 326
         reitermaniac.getScore();
         whiteWolf.getScore();
         bloodyMary.getScore();
         sonic.getScore();
         hotShotGG.getScore();
-        cornisier.getScore();
+        kornyser.getScore();
 
         Spieler[] players = new Spieler[6];
         for (int i = 0; i < players.length; i++){

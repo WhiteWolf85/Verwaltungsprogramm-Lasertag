@@ -39,7 +39,7 @@ public class SpielerController {
     public void initialize(){
 
         Spieler Tobias = new Spieler("Tobias", 19, "Ersatzbankhocker", null, null, "verletzt");
-        Spieler Anna = new Spieler("Anna", 20, "Bloody Mary", null, "Runner", "aktiv");
+        Spieler Anna = new Spieler("Anna", 25, "Bloody Mary", null, "Runner", "aktiv");
         Spieler Tom = new Spieler("Tom", 20, "Reitermaniac", null, "Runner", "aktiv");
         Spieler Franz = new Spieler("Franz", 30, "White Wolf", null, "Mittelfeld", "aktiv");
 

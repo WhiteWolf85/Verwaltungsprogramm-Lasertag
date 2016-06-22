@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="VestController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" >
    <center>
       <GridPane prefHeight="295.0" prefWidth="468.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -25,7 +24,6 @@
           <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ListView prefHeight="208.0" prefWidth="310.0" GridPane.rowIndex="1" />
             <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="137.0" />
@@ -44,6 +42,31 @@
                   <Label text="Score:" GridPane.rowIndex="2" />
                   <Label text="Ratio:" GridPane.rowIndex="3" />
                   <Label text="Vest Status:" GridPane.rowIndex="4" />
+                  <Label fx:id="label1" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="label5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
                </children>
             </GridPane>
             <Label alignment="CENTER" contentDisplay="CENTER" text="Vestnumber" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
@@ -56,6 +79,34 @@
                   <Insets left="150.0" />
                </GridPane.margin>
             </Label>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="vest1" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 1" />
+                  <Button fx:id="vest7" mnemonicParsing="false" onAction="#reactToButtonClickV7" text="Vest 7" GridPane.columnIndex="1" />
+                  <Button fx:id="vest2" mnemonicParsing="false" onAction="#reactToButtonClickV2" text="Vest 2" GridPane.rowIndex="1" />
+                  <Button fx:id="vest8" mnemonicParsing="false" onAction="#reactToButtonClickV8" text="Vest 8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="vest3" mnemonicParsing="false" onAction="#reactToButtonClickV3" text="Vest 3" GridPane.rowIndex="2" />
+                  <Button fx:id="vest9" mnemonicParsing="false" onAction="#reactToButtonClickV9" text="Vest 9" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="vest4" mnemonicParsing="false" onAction="#reactToButtonClickV4" text="Vest 4" GridPane.rowIndex="3" />
+                  <Button fx:id="vest10" mnemonicParsing="false" onAction="#reactToButtonClickV10" text="Vest 10" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="vest5" mnemonicParsing="false" onAction="#reactToButtonClickV5" text="Vest 5" GridPane.rowIndex="4" />
+                  <Button fx:id="vest11" mnemonicParsing="false" onAction="#reactToButtonClickV11" text="Vest 11" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="vest6" mnemonicParsing="false" onAction="#reactToButtonClickV6" text="Vest 6" GridPane.rowIndex="5" />
+                  <Button fx:id="vest12" mnemonicParsing="false" onAction="#reactToButtonClickV12" text="Vest 12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
          </children>
       </GridPane>
    </center>
