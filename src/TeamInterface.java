@@ -15,7 +15,6 @@ interface TeamInterface {
     void removeFromTeam(Spieler spieler, Team team);
     int gamesPlayed(Team team);
     String toString();
-    ImageView teamImage(ImageView teamLogo);
 
     //Getter
     String getTeamName();
@@ -24,11 +23,8 @@ interface TeamInterface {
     int getTeamMember();
     Team getTeam();
     int getTeamCounter();
-    ImageView getTeamLogo();
 
     //Setter
     void setTeamName(String teamName);
     void setTeam(Team team);
-    void setTeamLogo(ImageView teamLogo);
 }
-

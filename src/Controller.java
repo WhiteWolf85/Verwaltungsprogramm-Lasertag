@@ -28,8 +28,8 @@ public class Controller {
     public void showVest(ActionEvent event) throws IOException {
 
         BorderPane root=Main.getRoot();
-        URL listLink = getClass().getResource("list.fxml");
-        Pane list = FXMLLoader.load( listLink );
+        URL listLink = getClass().getResource("vest.fxml");
+        BorderPane list = FXMLLoader.load( listLink );
 
         root.setCenter(list);
     }

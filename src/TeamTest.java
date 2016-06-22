@@ -44,24 +44,30 @@ public class TeamTest {
         team1.addToTeam(hotShotGG);
         team1.addToTeam(cornisier);
 
-        reitermaniac.score = 200;
-        whiteWolf.score = 150;
-        bloodyMary.score = 150;
-        sonic.score = 200;
-        hotShotGG.score = 200;
-        cornisier.score = 100;
-
+        reitermaniac.updateScore(16,5); //Score: 65
+        whiteWolf.updateScore(12,6);    //Score: 42
+        bloodyMary.updateScore(14,9);   //Score: 43
+        sonic.updateScore(27,16);       //Score: 87
+        hotShotGG.updateScore(19,8);    //Score: 71
+        cornisier.updateScore(12,14);   //Score: 18
+                                        //SumScore: 326
+        reitermaniac.getScore();
+        whiteWolf.getScore();
+        bloodyMary.getScore();
+        sonic.getScore();
+        hotShotGG.getScore();
+        cornisier.getScore();
 
     }
 
     @Test
     public void testAddToTeam() throws Exception {
-        assertEquals("Erwartet Reitermaniac",team1.spieler[0],reitermaniac);
-        assertEquals("Erwartet White Wholf",team1.spieler[1],whiteWolf);
-        assertEquals("Erwartet Bloody Mary", team1.spieler[2],bloodyMary);
-        assertEquals("Erwartet Sonic", team1.spieler[3],sonic);
-        assertEquals("Erwartet HotShotGG", team1.spieler[4],hotShotGG);
-        assertEquals("Erwartet Cornisier", team1.spieler[5],cornisier);
+        assertEquals("Erwartet Reitermaniac",team1.getSpieler()[0],reitermaniac);
+        assertEquals("Erwartet White Wholf",team1.getSpieler()[1],whiteWolf);
+        assertEquals("Erwartet Bloody Mary", team1.getSpieler()[2],bloodyMary);
+        assertEquals("Erwartet Sonic", team1.getSpieler()[3],sonic);
+        assertEquals("Erwartet HotShotGG", team1.getSpieler()[4],hotShotGG);
+        assertEquals("Erwartet Cornisier", team1.getSpieler()[5],cornisier);
         assertEquals("Spieleranzahl = 6",team1.getTeamMember(),6);
     }
 
@@ -86,10 +92,10 @@ public class TeamTest {
     public void testSumScore() throws Exception {
         Spieler[] players = new Spieler[6];
         for (int i = 0; i < players.length; i++){
-            players[i] = team1.spieler[i];
+            players[i] = team1.getSpieler()[i];
         }
         team1.sumScore(players);
-        assertEquals("Score = 1000", team1.getTeamScore(),1000);
+        assertEquals("Score = 326", team1.getTeamScore(),326);
     }
 
     @Test

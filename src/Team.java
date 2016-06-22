@@ -22,12 +22,11 @@ public class Team implements TeamInterface, Sortable {
     private int gameCounter;
     private int teamMember;
     private Team team;
-    private ImageView teamLogo;
     private static int teamCounter = 0;
 
 
     //Array von der Klasse Spieler, um die Teammitglieder einzulesen
-    Spieler[] spieler = new Spieler[6];
+    private Spieler[] spieler = new Spieler[6];
     List<Spieler> teamloseSpieler = new ArrayList<Spieler>();
 
     //Team für Spieler ohne Team
@@ -100,11 +99,6 @@ public class Team implements TeamInterface, Sortable {
         return this.teamScore;
     }
 
-    public ImageView teamImage(ImageView teamLogo) {
-        ImageView image = teamLogo;
-        return image;
-    }
-
     //Anzahl der Gespielten Spiele des jeweiligen Teams
     public int gamesPlayed(Team team) {
         return team.gameCounter++;
@@ -128,6 +122,10 @@ public class Team implements TeamInterface, Sortable {
         return this.teamMember;
     }
 
+    public Spieler[] getSpieler() {
+        return spieler;
+    }
+
     public Team getTeam() {
         return this.team;
     }
@@ -136,19 +134,11 @@ public class Team implements TeamInterface, Sortable {
         return teamCounter;
     }
 
-    public ImageView getTeamLogo() {
-        return teamLogo;
-    }
-
     public void setTeamName(String teamName) {
         this.teamName = teamName;
     }
 
     public void setTeam(Team team) {
         this.team = team;
-    }
-
-    public void setTeamLogo(ImageView teamLogo) {
-        this.teamLogo = teamLogo;
     }
 }

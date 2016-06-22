@@ -35,45 +35,46 @@ public class MatchController{
     private static int playedMatches;
 
     public void initialize(){
-        Team beamforce=new Team("Beamforce");
-        Team btb=new Team("BTB");
 
         games.setText(Integer.toString(playedMatches));
 
         team1.setItems(FXCollections.observableArrayList(Main.globalTeams));
         team2.setItems(FXCollections.observableArrayList(Main.globalTeams));
+
     }
 
     public void startGame(ActionEvent event){
-
+/*
         //Testwerte
         Team beamforce=(Team)team1.getValue();
         Team btb=(Team)team2.getValue();
-        Vest v1=new Vest();
-        Main.globalVests.add(v1);
-        Vest v2=new Vest();
-        Main.globalVests.add(v2);
-        Vest v3=new Vest();
-        Main.globalVests.add(v3);
-        Vest v4=new Vest();
-        Main.globalVests.add(v4);
+        //Vest v1=new Vest();
+        //Main.globalVests.add(v1);
+        //Vest v2=new Vest();
+        //Main.globalVests.add(v2);
+        //Vest v3=new Vest();
+        //Main.globalVests.add(v3);
+        //Vest v4=new Vest();
+        //Main.globalVests.add(v4);
         Spieler s1=new Spieler();
-        s1.nickName="WhiteWolf";
+        //s1.nickName="WhiteWolf";
         Spieler s2=new Spieler();
-        s2.nickName="BloodyMary";
+        //s2.nickName="BloodyMary";
         Spieler s3=new Spieler();
-        s3.nickName="PG";
+        //s3.nickName="PG";
         Spieler s4=new Spieler();
-        s4.nickName="Tine";
+        //s4.nickName="Tine";
         beamforce.addToTeam(s1);
         beamforce.addToTeam(s2);
         btb.addToTeam(s3);
         btb.addToTeam(s4);
 
-        Team team1=(Team)this.team1.getValue();
-        Team team2=(Team)this.team2.getValue();
+
 
         //Ende Testwerte
+*/
+        Team team1=(Team)this.team1.getValue();
+        Team team2=(Team)this.team2.getValue();
 
         resultTeam1.setText("");
         resultTeam2.setText("");
@@ -89,21 +90,21 @@ public class MatchController{
                 int vestCount=0;
                 int result=0;
 
-                for(Spieler player:team1.spieler){
+                for(Spieler player:team1.getSpieler()){
                     //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
                     playerScore=r.nextInt(900) - 450;
-                    detailResultTeam1.setText(detailResultTeam1.getText()+player.nickName+":"+playerScore+"\n");
+                    detailResultTeam1.setText(detailResultTeam1.getText()+player.getNickName()+":"+playerScore+"\n");
                     result+=playerScore;
                     vestCount++;   //wird benötigt, um bei Team 2 mit der richtigen Weste weiter zu machen
                 }
                 resultTeam1.setText(Integer.toString(result));
                 result=0;
 
-                for(Spieler player:team2.spieler){
+                for(Spieler player:team2.getSpieler()){
                     //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
                     playerScore=r.nextInt(900) - 450;
                     result+=playerScore;
-                    detailResultTeam2.setText(detailResultTeam2.getText()+player.nickName+":"+playerScore+"\n");
+                    detailResultTeam2.setText(detailResultTeam2.getText()+player.getNickName()+":"+playerScore+"\n");
                 }
                 resultTeam2.setText(Integer.toString(result));
 
