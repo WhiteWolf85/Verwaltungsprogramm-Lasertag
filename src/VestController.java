@@ -16,97 +16,17 @@ public class VestController {
     public Button vest1, vest2, vest3, vest4, vest5, vest6, vest7, vest8, vest9, vest10, vest11, vest12;
 
     public void reactToButtonClickV1(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
+        Vest vest1 = new Vest();
+        vest1.randomHits();
+        vest1.randomHitsby();
+        vest1.calculateScore();
+        vest1.calculateRatio();
+        vest1.randomStatus();
+        label1.setText(String.valueOf(vest1.getHits()));
+        label2.setText(String.valueOf(vest1.getHitsby()));
+        label3.setText(String.valueOf(vest1.getScore()));
+        label4.setText(String.valueOf(vest1.getRatio()));
+        label5.setText(String.valueOf(vest1.getStatus()));
     }
 
-    public void reactToButtonClickV2(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-    public void reactToButtonClickV3(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV4(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV5(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV6(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV7(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV8(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV9(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-    public void reactToButtonClickV10(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV11(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    public void reactToButtonClickV12(ActionEvent actionEvent) {
-        label1.setText("15");
-        label2.setText("11");
-        label3.setText("42");
-        label4.setText("57.69");
-        label5.setText("ready");
-    }
-
-    }
+}
