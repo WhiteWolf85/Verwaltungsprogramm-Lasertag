@@ -26,7 +26,13 @@ public class ListController {
     }
 
     public void fillList(){
-        ObservableList<Team> ol= FXCollections.observableArrayList(Main.globalTeams);
+
+        ArrayList<Sortable> teamList=new ArrayList<Sortable>();
+        for(Team var:Main.globalTeams){
+            teamList.add(var);
+        }
+
+        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(sort.getSortedList(teamList));
 
         teamname.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
         teamscore.setCellValueFactory(new PropertyValueFactory<Team,String>("teamScore"));
@@ -38,14 +44,13 @@ public class ListController {
         Team team=(Team)listTeam.getSelectionModel().getSelectedItem();
         Spieler[] players=team.getSpieler();
 
-        ArrayList<Spieler> playerList=new ArrayList<Spieler>();
+        ArrayList<Sortable> playerList=new ArrayList<Sortable>();
 
-        //weil .getSpieler ein Array und keine ArrayList zurückgibt
         for(Spieler var:players){
             playerList.add(var);
         }
 
-        ObservableList<Spieler> ol= FXCollections.observableArrayList(playerList);
+        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(sort.getSortedList(playerList));
 
         player.setCellValueFactory(new PropertyValueFactory<Spieler,String>("nickName"));
         playerScore.setCellValueFactory(new PropertyValueFactory<Spieler,String>("score"));
@@ -55,7 +60,15 @@ public class ListController {
     }
 
     public void getAllPlayers(){
-        ObservableList<Spieler> ol= FXCollections.observableArrayList(Main.globalPlayers);
+
+        ArrayList<Sortable> playerList=new ArrayList<Sortable>();
+        for(Spieler var:Main.globalPlayers){
+            playerList.add(var);
+        }
+
+        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(sort.getSortedList(playerList));
+
+        //ObservableList<Spieler> ol= FXCollections.observableArrayList(Main.globalPlayers);
         player.setCellValueFactory(new PropertyValueFactory<Spieler,String>("nickName"));
         playerScore.setCellValueFactory(new PropertyValueFactory<Spieler,String>("score"));
         listPlayer.setItems(ol);
