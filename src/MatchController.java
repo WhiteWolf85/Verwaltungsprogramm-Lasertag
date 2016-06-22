@@ -93,7 +93,7 @@ public class MatchController{
                 for(Spieler player:team1.getSpieler()){
                     //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
                     playerScore=r.nextInt(900) - 450;
-                    detailResultTeam1.setText(detailResultTeam1.getText()+player.getNickName()+":"+playerScore+"\n");
+                    detailResultTeam1.setText(detailResultTeam1.getText()+playerScore+"\t\t"+player.getNickName()+"\n");
                     result+=playerScore;
                     vestCount++;   //wird benötigt, um bei Team 2 mit der richtigen Weste weiter zu machen
                 }
@@ -104,7 +104,7 @@ public class MatchController{
                     //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
                     playerScore=r.nextInt(900) - 450;
                     result+=playerScore;
-                    detailResultTeam2.setText(detailResultTeam2.getText()+player.getNickName()+":"+playerScore+"\n");
+                    detailResultTeam2.setText(detailResultTeam2.getText()+playerScore+"\t\t"+player.getNickName()+"\n");
                 }
                 resultTeam2.setText(Integer.toString(result));
 
@@ -139,7 +139,6 @@ public class MatchController{
         return zufallszahl;
     }
 }
-
 
 
 

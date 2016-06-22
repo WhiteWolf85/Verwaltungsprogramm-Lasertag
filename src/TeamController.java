@@ -24,6 +24,7 @@ public class TeamController {
     @FXML
     Label teamScore;
 
+    /*
     //Testwerte
     Team team1 = new Team("Beamforce One");
     Team team2 = new Team("Red Arrows");
@@ -41,6 +42,7 @@ public class TeamController {
     Spieler s4 = new Spieler("David", 20, "Frenchguy", team2, "Defensive", "aktiv");
     Spieler s5 = new Spieler("Andi",19,"Apfel", team2, "Runner", "aktiv");
     Spieler s6 = new Spieler("Bernd", 30, "Berni", team2, "Runner", "aktiv");
+    */
 
     public void initialize(){
         ObservableList<String> teamNames= FXCollections.observableArrayList();
@@ -49,9 +51,9 @@ public class TeamController {
         }
 
         teamList.setItems(teamNames);
-        add();
+        //add();
     }
-
+/*
     public void add(){
         team1.addToTeam(reitermaniac);
         team1.addToTeam(whiteWolf);
@@ -87,7 +89,7 @@ public class TeamController {
         }
         team1.sumScore(players);
     }
-
+*/
     public void showDetails(){
         String result = teamList.getSelectionModel().getSelectedItem();
         for(Team val:Main.globalTeams){
