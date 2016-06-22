@@ -61,14 +61,44 @@ public class Main extends Application {
         Spieler s1=new Spieler("Anna",25,"BloodyMary",t1,"Angriff","aktiv");
         Spieler s2=new Spieler("Franz",30,"WhiteWolf",t1,"Mittelfeld","aktiv");
         Spieler s3=new Spieler("Tom",20,"Reitermaniac",t1,"Angriff","aktiv");
+        Spieler s4=new Spieler("Martin",28,"Unreality",t1,"Angriff","aktiv");
+        Spieler s5=new Spieler("Werner",35,"Horsti",t1,"Mittelfeld","aktiv");
+        Spieler s6=new Spieler("Chris",23,"GreyWarden",t1,"Verteidigung","aktiv");
 
-        Spieler s4=new Spieler("PG",23,"PG",t2,"Angriff","aktiv");
-        Spieler s5=new Spieler("Tine",21,"Tine",t2,"Mittelfeld","aktiv");
-        Spieler s6=new Spieler("Patrick",22,"Nese",t2,"Verteidigung","aktiv");
+        Spieler s7=new Spieler("PG",23,"PG",t2,"Angriff","aktiv");
+        Spieler s8=new Spieler("Tine",21,"Tine",t2,"Mittelfeld","aktiv");
+        Spieler s9=new Spieler("Patrick",22,"Nese",t2,"Verteidigung","aktiv");
+        Spieler s10=new Spieler("Gaby",20,"Gaby",t2,"Angriff","aktiv");
+        Spieler s11=new Spieler("Lucas",22,"Shadow",t2,"Angriff","aktiv");
+        Spieler s12=new Spieler("Michael",23,"Kluger",t2,"Mittelfeld","aktiv");
 
-        Spieler s7=new Spieler("Andi",46,"Laseropa",t3,"Mittelfeld","aktiv");
-        Spieler s8=new Spieler("Ali",20,"Ali",t3,"Angriff","aktiv");
-        Spieler s9=new Spieler("Chris",20,"BlueFlash",t3,"Angriff","aktiv");
+        Spieler s13=new Spieler("Andi",40,"Laseropa",t3,"Mittelfeld","aktiv");
+        Spieler s14=new Spieler("Ali",30,"Ali",t3,"Angriff","aktiv");
+        Spieler s15=new Spieler("Chris",20,"BlueFlash",t3,"Angriff","aktiv");
+        Spieler s16=new Spieler("Susi",25,"Schnurzilu",t3,"Verteidigung","aktiv");
+        Spieler s17=new Spieler("Kassandra",20,"Kässi",t3,"Mittelfeld","aktiv");
+        Spieler s18=new Spieler("Lisi",22,"Lisi",t3,"Mittelfeld","aktiv");
+
+        t1.addToTeam(s1);
+        t1.addToTeam(s2);
+        t1.addToTeam(s3);
+        t1.addToTeam(s4);
+        t1.addToTeam(s5);
+        t1.addToTeam(s6);
+
+        t2.addToTeam(s7);
+        t2.addToTeam(s8);
+        t2.addToTeam(s9);
+        t2.addToTeam(s10);
+        t2.addToTeam(s11);
+        t2.addToTeam(s12);
+
+        t3.addToTeam(s13);
+        t3.addToTeam(s14);
+        t3.addToTeam(s15);
+        t3.addToTeam(s16);
+        t3.addToTeam(s17);
+        t3.addToTeam(s18);
 
         Vest v1=new Vest();
         Vest v2=new Vest();
@@ -76,6 +106,12 @@ public class Main extends Application {
         Vest v4=new Vest();
         Vest v5=new Vest();
         Vest v6=new Vest();
+        Vest v7=new Vest();
+        Vest v8=new Vest();
+        Vest v9=new Vest();
+        Vest v10=new Vest();
+        Vest v11=new Vest();
+        Vest v12=new Vest();
 
 
     }
