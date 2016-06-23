@@ -3,6 +3,6 @@
  */
 public interface Sortable {
 
-    public long getScore();
+    public int getScore();
 
 }
