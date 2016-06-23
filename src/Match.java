@@ -1,6 +1,6 @@
 /**
  * Created by franz on 20.05.16.
- */
+
 public class Match implements MatchInterface{
 
     private static int playedMatches;
@@ -29,6 +29,7 @@ public class Match implements MatchInterface{
     }
 
 
+*/
 
 
 
