@@ -105,6 +105,7 @@ public class MatchController{
                     vestCount++;
                 }
                 resultTeam1.setText(Integer.toString(result));
+                team1.sumScore();
                 result=0;
 
                 spieler=team2.getSpieler();
@@ -122,7 +123,7 @@ public class MatchController{
                     vestCount++;
                 }
                 resultTeam2.setText(Integer.toString(result));
-
+                team2.sumScore();
                 games.setText(Integer.toString(playedMatches));
 
             }else{
