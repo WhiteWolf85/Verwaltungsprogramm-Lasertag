@@ -90,28 +90,40 @@ public class MatchController{
                 int result=0;
                 int vestCount=0;
                 Spieler[] spieler=team1.getSpieler();
+                Vest vest;
 
                 for(int i=0;i<spieler.length;i++){
-                    vestScore=Main.globalVests.get(vestCount).getScore();
+                    vest=Main.globalVests.get(vestCount);
+                    vest.randomHits();
+                    vest.randomHitsby();
+                    vest.calculateScore();
+                    vest.calculateRatio();
+                    vestScore=vest.getScore();
                     detailResultTeam1.setText(detailResultTeam1.getText()+vestScore+"\t\t"+spieler[i].getNickName()+"\n");
                     spieler[i].updateScore(vestScore);
                     result+=vestScore;
                     vestCount++;
                 }
                 resultTeam1.setText(Integer.toString(result));
+                team1.sumScore();
                 result=0;
 
                 spieler=team2.getSpieler();
 
                 for(int i=0;i<spieler.length;i++){
-                    vestScore=Main.globalVests.get(vestCount).getScore();
+                    vest=Main.globalVests.get(vestCount);
+                    vest.randomHits();
+                    vest.randomHitsby();
+                    vest.calculateScore();
+                    vest.calculateRatio();
+                    vestScore=vest.getScore();
                     detailResultTeam2.setText(detailResultTeam2.getText()+vestScore+"\t\t"+spieler[i].getNickName()+"\n");
                     spieler[i].updateScore(vestScore);
                     result+=vestScore;
                     vestCount++;
                 }
                 resultTeam2.setText(Integer.toString(result));
-
+                team2.sumScore();
                 games.setText(Integer.toString(playedMatches));
 
             }else{

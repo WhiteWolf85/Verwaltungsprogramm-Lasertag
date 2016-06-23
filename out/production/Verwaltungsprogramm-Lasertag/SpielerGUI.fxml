@@ -84,11 +84,6 @@
                               <Insets left="5.0" />
                            </GridPane.margin>
                         </Label>
-                        <Label prefHeight="27.0" prefWidth="143.0" text="Played Games:" GridPane.rowIndex="4">
-                           <GridPane.margin>
-                              <Insets left="5.0" />
-                           </GridPane.margin>
-                        </Label>
                         <Label text="Role:" GridPane.rowIndex="5">
                            <GridPane.margin>
                               <Insets left="5.0" />
