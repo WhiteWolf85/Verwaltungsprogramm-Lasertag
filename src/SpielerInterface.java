@@ -15,4 +15,6 @@ public interface SpielerInterface {
      String getNickName();
      String getName();
      int getAge();
+     Team getTeam();
+     void setTeam(Team team);
 }
