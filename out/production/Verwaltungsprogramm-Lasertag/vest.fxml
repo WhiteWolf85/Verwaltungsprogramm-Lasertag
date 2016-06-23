@@ -94,17 +94,17 @@
               </rowConstraints>
                <children>
                   <Button fx:id="vest1" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 1" />
-                  <Button fx:id="vest7" mnemonicParsing="false" onAction="#reactToButtonClickV7" text="Vest 7" GridPane.columnIndex="1" />
-                  <Button fx:id="vest2" mnemonicParsing="false" onAction="#reactToButtonClickV2" text="Vest 2" GridPane.rowIndex="1" />
-                  <Button fx:id="vest8" mnemonicParsing="false" onAction="#reactToButtonClickV8" text="Vest 8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button fx:id="vest3" mnemonicParsing="false" onAction="#reactToButtonClickV3" text="Vest 3" GridPane.rowIndex="2" />
-                  <Button fx:id="vest9" mnemonicParsing="false" onAction="#reactToButtonClickV9" text="Vest 9" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Button fx:id="vest4" mnemonicParsing="false" onAction="#reactToButtonClickV4" text="Vest 4" GridPane.rowIndex="3" />
-                  <Button fx:id="vest10" mnemonicParsing="false" onAction="#reactToButtonClickV10" text="Vest 10" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Button fx:id="vest5" mnemonicParsing="false" onAction="#reactToButtonClickV5" text="Vest 5" GridPane.rowIndex="4" />
-                  <Button fx:id="vest11" mnemonicParsing="false" onAction="#reactToButtonClickV11" text="Vest 11" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <Button fx:id="vest6" mnemonicParsing="false" onAction="#reactToButtonClickV6" text="Vest 6" GridPane.rowIndex="5" />
-                  <Button fx:id="vest12" mnemonicParsing="false" onAction="#reactToButtonClickV12" text="Vest 12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button fx:id="vest7" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 7" GridPane.columnIndex="1" />
+                  <Button fx:id="vest2" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 2" GridPane.rowIndex="1" />
+                  <Button fx:id="vest8" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="vest3" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 3" GridPane.rowIndex="2" />
+                  <Button fx:id="vest9" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 9" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="vest4" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 4" GridPane.rowIndex="3" />
+                  <Button fx:id="vest10" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 10" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="vest5" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 5" GridPane.rowIndex="4" />
+                  <Button fx:id="vest11" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 11" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="vest6" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 6" GridPane.rowIndex="5" />
+                  <Button fx:id="vest12" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                </children>
             </GridPane>
          </children>
