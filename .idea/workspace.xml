@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873909be-8964-41b0-a997-097c2a03d75a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Team.java" afterPath="$PROJECT_DIR$/src/Team.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Verwaltungsprogramm-Lasertag.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -331,6 +330,13 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="2errors :P">
+      <created>1466685029548</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466685029548</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -362,6 +368,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2errors :P" />
+    <option name="LAST_COMMIT_MESSAGE" value="2errors :P" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
