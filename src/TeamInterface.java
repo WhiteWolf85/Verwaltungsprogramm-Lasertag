@@ -12,7 +12,7 @@ import java.awt.*;
 interface TeamInterface {
 
     //Methoden
-    long sumScore();
+    int sumScore();
     //void addTeam();
     void removeTeam(Team team);
     void addToTeam(Spieler spieler);
@@ -22,7 +22,7 @@ interface TeamInterface {
 
     //Getter
     String getTeamName();
-    long getTeamScore();
+    int getTeamScore();
     int getGameCounter();
     int getTeamMember();
     Team getTeam();
