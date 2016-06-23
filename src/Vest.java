@@ -14,6 +14,7 @@ public class Vest implements VestInterface {
     private int hitsby;
     private String status;
 
+
     public Vest() {
         Main.globalVests.add(this);
     }
@@ -49,20 +50,24 @@ public class Vest implements VestInterface {
         this.status = (status[(int) Math.floor(Math.random() * status.length)]);
     }
 
+
     public void randomHits() {
         this.hits = (int) (Math.random() * 10);
     }
+
 
     public void randomHitsby() {
         this.hitsby = (int) (Math.random() * 10);
     }
 
+
     public void calculateScore() {
         this.score = (this.hits * 5) - (this.hitsby * 3);
     }
 
+
     public void calculateRatio() {
-        this.ratio = (this.hits + this.hitsby / 100 * this.hits );
+        this.ratio = (this.hits * 100 / (this.hits + this.hitsby));
     }
 
 
