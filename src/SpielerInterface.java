@@ -12,4 +12,7 @@ public interface SpielerInterface {
      Spieler getSpieler();
      void setStatus(String status);
      void setRole(String role);
+     String getNickName();
+     String getName();
+     int getAge();
 }

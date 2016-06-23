@@ -27,7 +27,6 @@ public class Spieler implements SpielerInterface, Sortable{
     public void updateScore(int sc){
         score += sc;
     }
-
     public int getScore(){return score;}
     public float getRatio(){return ratio;}
     public String getRole() {return role;}
