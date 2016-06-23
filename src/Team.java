@@ -77,6 +77,7 @@ public class Team implements TeamInterface, Sortable {
 
     //Fügt Spieler an ein Team an
     public void addToTeam(Spieler spieler) {
+        spieler.setTeam(this);
         this.spieler[this.teamMember] = spieler;
         this.teamMember++;
     }
