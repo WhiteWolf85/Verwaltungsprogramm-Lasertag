@@ -21,7 +21,7 @@ public class Team implements TeamInterface, Sortable {
 
     //Attribute
     private String teamName;
-    private long teamScore;
+    private int teamScore;
     private int gameCounter;
     private int teamMember;
     private Team team;
@@ -95,7 +95,7 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
-    public long sumScore() {
+    public int sumScore() {
         //For Schleife für 6 Westen
         for (int i = 0; i <= 5; i++) {
             this.teamScore += spieler[i].getScore();
@@ -116,7 +116,7 @@ public class Team implements TeamInterface, Sortable {
         return this.teamScore;
     }
 
-    public long getScore(){return this.teamScore;}
+    public int getScore(){return this.teamScore;}
 
     public int getGameCounter() {
         return this.gameCounter;
