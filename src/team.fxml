@@ -8,6 +8,7 @@
 <?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -144,4 +145,7 @@
             </InnerShadow>
          </effect></AnchorPane>
    </bottom>
+   <effect>
+      <Reflection fraction="0.3" topOpacity="0.4" />
+   </effect>
 </BorderPane>

@@ -45,26 +45,41 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER" text="Hits:">
+                  <Label alignment="CENTER" text="Hits:" underline="true">
                      <GridPane.margin>
-                        <Insets left="40.0" />
-                     </GridPane.margin></Label>
-                  <Label text="Hits By:" GridPane.rowIndex="1">
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label text="Hits By:" underline="true" GridPane.rowIndex="1">
                      <GridPane.margin>
-                        <Insets left="40.0" />
-                     </GridPane.margin></Label>
-                  <Label text="Score:" GridPane.rowIndex="2">
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label text="Score:" underline="true" GridPane.rowIndex="2">
                      <GridPane.margin>
-                        <Insets left="40.0" />
-                     </GridPane.margin></Label>
-                  <Label text="Ratio:" GridPane.rowIndex="3">
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label text="Ratio:" underline="true" GridPane.rowIndex="3">
                      <GridPane.margin>
-                        <Insets left="40.0" />
-                     </GridPane.margin></Label>
-                  <Label text="Vest Status:" GridPane.rowIndex="4">
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label text="Westenstatus:" underline="true" GridPane.rowIndex="4">
                      <GridPane.margin>
-                        <Insets left="40.0" />
-                     </GridPane.margin></Label>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
                   <Label fx:id="label1" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets left="10.0" />
@@ -115,54 +130,90 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="vest1" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 1">
+                  <Button fx:id="vest1" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 1">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest7" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 7" GridPane.columnIndex="1">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest7" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 7" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets left="5.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest2" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 2" GridPane.rowIndex="1">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest2" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 2" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest8" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest8" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 8" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets left="5.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest3" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 3" GridPane.rowIndex="2">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest3" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 3" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest9" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 9" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest9" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 9" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets left="5.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest4" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 4" GridPane.rowIndex="3">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest4" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 4" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest10" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest10" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 10" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets left="5.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest5" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 5" GridPane.rowIndex="4">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest5" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 5" GridPane.rowIndex="4">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest11" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 11" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest11" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 11" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <GridPane.margin>
                         <Insets left="5.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest6" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 6" GridPane.rowIndex="5">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest6" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 6" GridPane.rowIndex="5">
                      <GridPane.margin>
                         <Insets left="10.0" />
-                     </GridPane.margin></Button>
-                  <Button fx:id="vest12" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Vest 12" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="vest12" mnemonicParsing="false" onAction="#reactToButtonClickV1" prefHeight="30.0" prefWidth="70.0" text="Weste 12" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <GridPane.margin>
                         <Insets left="5.0" />
-                     </GridPane.margin></Button>
+                     </GridPane.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
                </children>
                <effect>
                   <DropShadow />
@@ -174,13 +225,16 @@
                   <Insets left="50.0" right="50.0" top="30.0" />
                </GridPane.margin>
             </GridPane>
-            <Label alignment="CENTER" contentDisplay="CENTER" text="Vestnumber" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Westen" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
                <GridPane.margin>
-                  <Insets left="80.0" top="20.0" />
+                  <Insets top="20.0" />
                </GridPane.margin>
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
             </Label>
             <Label text="Details" GridPane.columnIndex="2">
                <GridPane.margin>
@@ -202,7 +256,7 @@
    <top>
       <AnchorPane blendMode="DARKEN" prefHeight="60.0" prefWidth="722.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="322.0" layoutY="15.0" text="Vests">
+            <Label layoutX="241.0" layoutY="15.0" text="Westenübersicht">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
