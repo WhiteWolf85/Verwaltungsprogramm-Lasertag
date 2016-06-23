@@ -11,6 +11,10 @@ import static org.junit.Assert.*;
 /**
  * Created by Thomas Laptop on 20.06.2016.
  */
+
+/**
+ * @author Thomas
+ */
 public class TeamTest {
 
     Team team1;
@@ -90,11 +94,11 @@ public class TeamTest {
 
     @Test
     public void testSumScore() throws Exception {
-        Spieler[] players = new Spieler[6];
+        /*Spieler[] players = new Spieler[6];
         for (int i = 0; i < players.length; i++){
             players[i] = team1.getSpieler()[i];
-        }
-        team1.sumScore(players);
+        }*/
+        team1.sumScore();
         assertEquals("Score = 326", team1.getTeamScore(),326);
     }
 

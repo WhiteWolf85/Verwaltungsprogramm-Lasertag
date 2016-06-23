@@ -14,6 +14,9 @@ import static sun.applet.AppletResourceLoader.getImage;
  * Created by Thomas Laptop on 12.05.2016.
  */
 
+/**
+ * @author Thomas
+ */
 public class Team implements TeamInterface, Sortable {
 
     //Attribute
@@ -91,7 +94,7 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
-    public long sumScore(Spieler[] spieler) {
+    public long sumScore() {
         //For Schleife für 6 Westen
         for (int i = 0; i <= 5; i++) {
             this.teamScore += spieler[i].getScore();
