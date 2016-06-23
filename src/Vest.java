@@ -45,7 +45,7 @@ public class Vest implements VestInterface {
 
 
     public void randomStatus() {
-        String[] status = {"Bereit", "Wird geladen", "in Reparatur"};
+        String[] status = {"Bereit", "Wird geladen", "In Reparatur"};
         this.status = (status[(int) Math.floor(Math.random() * status.length)]);
     }
 
