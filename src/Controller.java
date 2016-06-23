@@ -20,7 +20,7 @@ public class Controller {
     public void showMatch(ActionEvent event) throws IOException {
         BorderPane root=Main.getRoot();
         URL listLink = getClass().getResource("match.fxml");
-        Pane list = FXMLLoader.load( listLink );
+        BorderPane list = FXMLLoader.load( listLink );
 
         root.setCenter(list);
     }
@@ -56,7 +56,7 @@ public class Controller {
 
         BorderPane root=Main.getRoot();
         URL listLink = getClass().getResource("list.fxml");
-        Pane list = FXMLLoader.load( listLink );
+        BorderPane list = FXMLLoader.load( listLink );
 
         root.setCenter(list);
 
