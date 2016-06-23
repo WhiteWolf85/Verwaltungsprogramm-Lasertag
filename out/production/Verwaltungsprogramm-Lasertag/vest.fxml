@@ -10,12 +10,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:controller="VestController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" >
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VestController">
    <center>
       <GridPane prefHeight="295.0" prefWidth="468.0" BorderPane.alignment="CENTER">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="255.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="18.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="170.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="103.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="347.0" />
         </columnConstraints>
         <rowConstraints>
@@ -24,7 +24,7 @@
           <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="137.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="210.0" />
@@ -71,7 +71,7 @@
             </GridPane>
             <Label alignment="CENTER" contentDisplay="CENTER" text="Vestnumber" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
                <GridPane.margin>
-                  <Insets left="90.0" />
+                  <Insets left="50.0" />
                </GridPane.margin>
             </Label>
             <Label text="Details" GridPane.columnIndex="2">
@@ -79,7 +79,7 @@
                   <Insets left="150.0" />
                </GridPane.margin>
             </Label>
-            <GridPane GridPane.rowIndex="1">
+            <GridPane prefHeight="317.0" prefWidth="219.0" style="-fx-background-color: white;" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -93,7 +93,10 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="vest1" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 1" />
+                  <Button fx:id="vest1" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin></Button>
                   <Button fx:id="vest7" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 7" GridPane.columnIndex="1" />
                   <Button fx:id="vest2" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 2" GridPane.rowIndex="1" />
                   <Button fx:id="vest8" mnemonicParsing="false" onAction="#reactToButtonClickV1" text="Vest 8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -111,7 +114,7 @@
       </GridPane>
    </center>
    <top>
-      <AnchorPane prefHeight="60.0" prefWidth="722.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="60.0" prefWidth="722.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="322.0" layoutY="15.0" text="Vests">
                <font>
@@ -122,9 +125,12 @@
       </AnchorPane>
    </top>
    <left>
-      <AnchorPane prefHeight="443.0" prefWidth="51.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="443.0" prefWidth="51.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
    </left>
    <right>
-      <AnchorPane prefHeight="443.0" prefWidth="51.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="443.0" prefWidth="51.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
    </right>
+   <bottom>
+      <AnchorPane prefHeight="41.0" prefWidth="722.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>
