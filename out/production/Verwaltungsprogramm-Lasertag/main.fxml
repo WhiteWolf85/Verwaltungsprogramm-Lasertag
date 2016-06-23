@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" />
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <Glow>
+         <input>
+            <DropShadow />
+         </input></Glow>
+   </effect>
+   <top>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </bottom>
+</BorderPane>
