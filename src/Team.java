@@ -112,7 +112,7 @@ public class Team implements TeamInterface, Sortable {
         return this.teamName;
     }
 
-    public long getTeamScore() {
+    public int getTeamScore() {
         return this.teamScore;
     }
 
