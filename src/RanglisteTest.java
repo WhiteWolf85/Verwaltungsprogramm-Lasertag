@@ -25,11 +25,11 @@ public class RanglisteTest {
 
         beamforce = new Team("Beamforce");
         btb = new Team("BTB");
-        whiteWolf = new Spieler("Franz",30,"WhiteWolf",beamforce,"Mittelfeld","aktiv");
-        bloodyMary = new Spieler("Franz",30,"WhiteWolf",beamforce,"Mittelfeld","aktiv");
-        reitermaniac=new Spieler("Franz",30,"WhiteWolf",beamforce,"Mittelfeld","aktiv");
-        pg = new Spieler();
-        tine = new Spieler();
+        whiteWolf = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
+        bloodyMary = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
+        reitermaniac=new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
+        pg = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
+        tine = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
         sort=new Rangliste();
 
 
