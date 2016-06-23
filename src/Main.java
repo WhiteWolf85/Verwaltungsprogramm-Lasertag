@@ -58,26 +58,26 @@ public class Main extends Application {
         Team t2=new Team("BTB");
         Team t3=new Team("Redforce");
 
-        Spieler s1=new Spieler("Anna",25,"BloodyMary",t1,"Angriff","aktiv");
-        Spieler s2=new Spieler("Franz",30,"WhiteWolf",t1,"Mittelfeld","aktiv");
-        Spieler s3=new Spieler("Tom",20,"Reitermaniac",t1,"Angriff","aktiv");
-        Spieler s4=new Spieler("Martin",28,"Unreality",t1,"Angriff","aktiv");
-        Spieler s5=new Spieler("Werner",35,"Horsti",t1,"Mittelfeld","aktiv");
-        Spieler s6=new Spieler("Chris",23,"GreyWarden",t1,"Verteidigung","aktiv");
+        Spieler s1=new Spieler("Anna",25,"BloodyMary","Angriff","aktiv");
+        Spieler s2=new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
+        Spieler s3=new Spieler("Tom",20,"Reitermaniac","Angriff","aktiv");
+        Spieler s4=new Spieler("Martin",28,"Unreality","Angriff","aktiv");
+        Spieler s5=new Spieler("Werner",35,"Horsti","Mittelfeld","aktiv");
+        Spieler s6=new Spieler("Chris",23,"GreyWarden","Verteidigung","aktiv");
 
-        Spieler s7=new Spieler("PG",23,"PG",t2,"Angriff","aktiv");
-        Spieler s8=new Spieler("Tine",21,"Tine",t2,"Mittelfeld","aktiv");
-        Spieler s9=new Spieler("Patrick",22,"Nese",t2,"Verteidigung","aktiv");
-        Spieler s10=new Spieler("Gaby",20,"Gaby",t2,"Angriff","aktiv");
-        Spieler s11=new Spieler("Lucas",22,"Shadow",t2,"Angriff","aktiv");
-        Spieler s12=new Spieler("Michael",23,"Kluger",t2,"Mittelfeld","aktiv");
+        Spieler s7=new Spieler("PG",23,"PG","Angriff","aktiv");
+        Spieler s8=new Spieler("Tine",21,"Tine","Mittelfeld","aktiv");
+        Spieler s9=new Spieler("Patrick",22,"Nese","Verteidigung","aktiv");
+        Spieler s10=new Spieler("Gaby",20,"Gaby","Angriff","aktiv");
+        Spieler s11=new Spieler("Lucas",22,"Shadow","Angriff","aktiv");
+        Spieler s12=new Spieler("Michael",23,"Kluger","Mittelfeld","aktiv");
 
-        Spieler s13=new Spieler("Andi",40,"Laseropa",t3,"Mittelfeld","aktiv");
-        Spieler s14=new Spieler("Ali",30,"Ali",t3,"Angriff","aktiv");
-        Spieler s15=new Spieler("Chris",20,"BlueFlash",t3,"Angriff","aktiv");
-        Spieler s16=new Spieler("Susi",25,"Schnurzilu",t3,"Verteidigung","aktiv");
-        Spieler s17=new Spieler("Kassandra",20,"Kässi",t3,"Mittelfeld","aktiv");
-        Spieler s18=new Spieler("Lisi",22,"Lisi",t3,"Mittelfeld","aktiv");
+        Spieler s13=new Spieler("Andi",40,"Laseropa","Mittelfeld","aktiv");
+        Spieler s14=new Spieler("Ali",30,"Ali","Angriff","aktiv");
+        Spieler s15=new Spieler("Chris",20,"BlueFlash","Angriff","aktiv");
+        Spieler s16=new Spieler("Susi",25,"Schnurzilu","Verteidigung","aktiv");
+        Spieler s17=new Spieler("Kassandra",20,"Kässi","Mittelfeld","aktiv");
+        Spieler s18=new Spieler("Lisi",22,"Lisi","Mittelfeld","aktiv");
 
         t1.addToTeam(s1);
         t1.addToTeam(s2);
