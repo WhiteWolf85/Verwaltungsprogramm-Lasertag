@@ -38,7 +38,7 @@ public class Controller {
 
         BorderPane root=Main.getRoot();
         URL listLink = getClass().getResource("SpielerGUI.fxml");
-        SplitPane list = FXMLLoader.load( listLink );
+        BorderPane list = FXMLLoader.load( listLink );
 
         root.setCenter(list);
 
@@ -47,7 +47,7 @@ public class Controller {
     public void showTeam(ActionEvent event) throws IOException {
         BorderPane root=Main.getRoot();
         URL listLink = getClass().getResource("team.fxml");
-        SplitPane list = FXMLLoader.load( listLink );
+        BorderPane list = FXMLLoader.load( listLink );
 
         root.setCenter(list);
     }
