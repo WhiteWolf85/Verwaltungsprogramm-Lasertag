@@ -86,25 +86,29 @@ public class MatchController{
             if(gesamt<=Main.globalVests.size()){
                 playedMatches++;
                 Random r=new Random();
-                int playerScore=0;
-                int vestCount=0;
+                int vestScore=0;
                 int result=0;
+                int vestCount=0;
+                Spieler[] spieler=team1.getSpieler();
 
-                for(Spieler player:team1.getSpieler()){
-                    //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
-                    playerScore=r.nextInt(900) - 450;
-                    detailResultTeam1.setText(detailResultTeam1.getText()+playerScore+"\t\t"+player.getNickName()+"\n");
-                    result+=playerScore;
-                    vestCount++;   //wird benötigt, um bei Team 2 mit der richtigen Weste weiter zu machen
+                for(int i=0;i<spieler.length;i++){
+                    vestScore=Main.globalVests.get(vestCount).getScore();
+                    detailResultTeam1.setText(detailResultTeam1.getText()+vestScore+"\t\t"+spieler[i].getNickName()+"\n");
+                    spieler[i].updateScore(vestScore);
+                    result+=vestScore;
+                    vestCount++;
                 }
                 resultTeam1.setText(Integer.toString(result));
                 result=0;
 
-                for(Spieler player:team2.getSpieler()){
-                    //hier müsste eigentlich eine Methode der Klasse Vest aufgerufen werden, die den Score des aktuellen Spiels zurückgibt
-                    playerScore=r.nextInt(900) - 450;
-                    result+=playerScore;
-                    detailResultTeam2.setText(detailResultTeam2.getText()+playerScore+"\t\t"+player.getNickName()+"\n");
+                spieler=team2.getSpieler();
+
+                for(int i=0;i<spieler.length;i++){
+                    vestScore=Main.globalVests.get(vestCount).getScore();
+                    detailResultTeam2.setText(detailResultTeam2.getText()+vestScore+"\t\t"+spieler[i].getNickName()+"\n");
+                    spieler[i].updateScore(vestScore);
+                    result+=vestScore;
+                    vestCount++;
                 }
                 resultTeam2.setText(Integer.toString(result));
 

@@ -14,11 +14,14 @@ import static sun.applet.AppletResourceLoader.getImage;
  * Created by Thomas Laptop on 12.05.2016.
  */
 
+/**
+ * @author Thomas
+ */
 public class Team implements TeamInterface, Sortable {
 
     //Attribute
     private String teamName;
-    private long teamScore;
+    private int teamScore;
     private int gameCounter;
     private int teamMember;
     private Team team;
@@ -74,6 +77,7 @@ public class Team implements TeamInterface, Sortable {
 
     //Fügt Spieler an ein Team an
     public void addToTeam(Spieler spieler) {
+        spieler.setTeam(this);
         this.spieler[this.teamMember] = spieler;
         this.teamMember++;
     }
@@ -91,7 +95,7 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
-    public long sumScore(Spieler[] spieler) {
+    public int sumScore() {
         //For Schleife für 6 Westen
         for (int i = 0; i <= 5; i++) {
             this.teamScore += spieler[i].getScore();
@@ -108,11 +112,11 @@ public class Team implements TeamInterface, Sortable {
         return this.teamName;
     }
 
-    public long getTeamScore() {
+    public int getTeamScore() {
         return this.teamScore;
     }
 
-    public long getScore(){return this.teamScore;}
+    public int getScore(){return this.teamScore;}
 
     public int getGameCounter() {
         return this.gameCounter;
