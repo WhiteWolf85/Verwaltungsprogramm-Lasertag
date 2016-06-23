@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="873909be-8964-41b0-a997-097c2a03d75a" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Verwaltungsprogramm-Lasertag/ListController.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Verwaltungsprogramm-Lasertag/Rangliste.class" afterPath="" />
@@ -14,6 +15,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Verwaltungsprogramm-Lasertag/TeamInterface.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Verwaltungsprogramm-Lasertag/VestController.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Verwaltungsprogramm-Lasertag/VestInterface.class" afterPath="" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+=======
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+>>>>>>> 19aa7a9f0e8637493df12285268492d55f81573b
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Verwaltungsprogramm-Lasertag.iws" />
@@ -60,8 +67,23 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="65" column="82" selection-start-line="60" selection-start-column="8" selection-end-line="65" selection-end-column="82" />
+=======
+            <state relative-caret-position="346">
+              <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MatchController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="101" column="21" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+>>>>>>> 19aa7a9f0e8637493df12285268492d55f81573b
               <folding />
             </state>
           </provider>
@@ -391,8 +413,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RanglisteTest.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.33224756">
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+=======
+        <state relative-caret-position="120">
+          <caret line="101" column="21" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+>>>>>>> 19aa7a9f0e8637493df12285268492d55f81573b
           <folding />
         </state>
       </provider>
