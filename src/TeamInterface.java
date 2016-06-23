@@ -5,10 +5,14 @@ import java.awt.*;
 /**
  * Created by Thomas Laptop on 13.05.2016.
  */
+
+/**
+ * @author Thomas
+ */
 interface TeamInterface {
 
     //Methoden
-    long sumScore(Spieler[] spieler);
+    long sumScore();
     //void addTeam();
     void removeTeam(Team team);
     void addToTeam(Spieler spieler);
