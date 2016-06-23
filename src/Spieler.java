@@ -11,6 +11,7 @@ public class Spieler implements SpielerInterface, Sortable{
         private String role;
         private String status;
         private int score;
+        private Team team;
         private float ratio;
         private Spieler spieler;
 
@@ -27,6 +28,7 @@ public class Spieler implements SpielerInterface, Sortable{
     public void updateScore(int sc){
         score += sc;
     }
+
     public int getScore(){return score;}
     public float getRatio(){return ratio;}
     public String getRole() {return role;}
@@ -37,5 +39,7 @@ public class Spieler implements SpielerInterface, Sortable{
     public String getNickName(){return nickName;}
     public String getName(){return name;}
     public int getAge(){return age;}
+    public Team getTeam(){return team;}
+    public void setTeam(Team team){this.team = team;}
 
 }
