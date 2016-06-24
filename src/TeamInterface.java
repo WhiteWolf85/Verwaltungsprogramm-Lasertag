@@ -12,7 +12,7 @@ import java.awt.*;
 interface TeamInterface {
 
     //Methoden
-    int sumScore();
+    void sumScore(int score);
     //void addTeam();
     void removeTeam(Team team);
     void addToTeam(Spieler spieler);
