@@ -38,10 +38,10 @@ public class SpielerController {
 
     public void initialize(){
 
-        Spieler Tobias = new Spieler("Tobias", 19, "Ersatzbankhocker", null, null, "verletzt");
-        Spieler Anna = new Spieler("Anna", 25, "Bloody Mary", null, "Runner", "aktiv");
-        Spieler Tom = new Spieler("Tom", 20, "Reitermaniac", null, "Runner", "aktiv");
-        Spieler Franz = new Spieler("Franz", 30, "White Wolf", null, "Mittelfeld", "aktiv");
+        //Spieler Tobias = new Spieler("Tobias", 19, "Ersatzbankhocker", null, null, "verletzt");
+        //Spieler Anna = new Spieler("Anna", 25, "Bloody Mary", null, "Runner", "aktiv");
+        //Spieler Tom = new Spieler("Tom", 20, "Reitermaniac", null, "Runner", "aktiv");
+        //Spieler Franz = new Spieler("Franz", 30, "White Wolf", null, "Mittelfeld", "aktiv");
 
 
         ObservableList<String> playerNames=FXCollections.observableArrayList();
@@ -62,7 +62,7 @@ public class SpielerController {
                 label1.setText(Integer.toString(val.getAge()));
                 label2.setText(val.getNickName());
                 label3.setText(val.getTeam().getTeamName());
-                label4.setText(Integer.toString(val.getGames()));
+                //label4.setText(Integer.toString(val.getGames()));
                 label5.setText(val.getRole());
                 label6.setText(val.getStatus());
                 label7.setText(Long.toString(val.getScore()));

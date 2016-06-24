@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
  * Created by anna on 20.06.16.
  */
 public class VestTest {
-/*
+
     @Test
     public void getVestNumber() throws Exception {
         Vest vest1 = new Vest();
@@ -42,20 +42,6 @@ public class VestTest {
         Vest vest5 = new Vest();
         vest5.setHitsby(22);
         assertEquals(22, vest5.getHitsby());
-    }
-
-    @Test
-    public void getStatus() throws Exception {
-        Vest vest6 = new Vest();
-        vest6.setStatus("ready");
-        assertEquals("ready", vest6.getStatus());
-    }
-
-    @Test
-    public void setStatus() throws Exception {
-        Vest vest6 = new Vest();
-        vest6.setStatus("defect");
-        assertEquals("defect", vest6.getStatus());
     }
 
     @Test
@@ -103,5 +89,5 @@ public class VestTest {
         vest12.calculateRatio();
         assertEquals(71.4, vest12.getRatio(), 1);
     }
-    */
+
 }

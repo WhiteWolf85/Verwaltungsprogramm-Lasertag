@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * Created by franz on 19.06.16.
  */
-public class ListController {
+public class RanglistController {
 
     @FXML
     private TableView listTeam, listPlayer;

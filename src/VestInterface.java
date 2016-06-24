@@ -22,4 +22,16 @@ interface VestInterface {
 
     void setHitsby(int receivedHits);
 
+
+    String getStatus();
+
+    void randomStatus();
+
+    void randomHits();
+
+    void randomHitsby();
+
+    void calculateScore();
+
+    void calculateRatio();
 }

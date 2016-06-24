@@ -8,48 +8,29 @@ public class Spieler implements SpielerInterface, Sortable{
         private String name;
         private int age;
         private String nickName;
-        private Team team;
-        private int gameCounter = 0;
         private String role;
         private String status;
-        private long score;
-        private int hits;
-        private int hitsBy;
+        private int score;
+        private Team team;
         private float ratio;
         private Spieler spieler;
 
-    public Spieler(){
-
-    }
-
     //Constructor
-    public Spieler(String name, int age, String nickName, Team team, String role, String status){
+    public Spieler(String name, int age, String nickName, String role, String status){
         this.name = name;
         this.age = age;
         this.nickName = nickName;
-        this.team = team;
         this.role = role;
         this.status = status;
         Main.globalPlayers.add(this);
     }
-/*
-    public void addSpieler() {
-        Spieler spieler = new Spieler();
-        Scanner scanner = new Scanner(System.in);
-        spieler.name = scanner.nextLine();
-    }
-*/
-    public void updateScore(int H, int HB){    //Hits, HitsBy
-        score = H * 5 - HB * 3;
-        this.hits = hits + H;        //dealtHits are Hits overall, not just one game
-        this.hitsBy = hitsBy + HB;  //same for receivedHits
-        ratio = (float) this.hits / this.hitsBy;  //calculates new ratio
-        gameCounter ++;
+
+    public void updateScore(int sc){
+        score += sc;
     }
 
-    public long getScore(){return score;}
+    public int getScore(){return score;}
     public float getRatio(){return ratio;}
-    public int getGames() {return gameCounter;}
     public String getRole() {return role;}
     public String getStatus(){return status;}
     public Spieler getSpieler(){return this.spieler;}
@@ -59,5 +40,6 @@ public class Spieler implements SpielerInterface, Sortable{
     public String getName(){return name;}
     public int getAge(){return age;}
     public Team getTeam(){return team;}
+    public void setTeam(Team team){this.team = team;}
 
 }

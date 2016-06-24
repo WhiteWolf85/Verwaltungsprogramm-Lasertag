@@ -4,13 +4,17 @@
 public interface SpielerInterface {
 
 
-     void updateScore(int dH, int rH);
-     long getScore();
+     void updateScore(int sc);
+     int getScore();
      float getRatio();
-     int getGames();
      String getRole();
      String getStatus();
      Spieler getSpieler();
      void setStatus(String status);
      void setRole(String role);
+     String getNickName();
+     String getName();
+     int getAge();
+     Team getTeam();
+     void setTeam(Team team);
 }
