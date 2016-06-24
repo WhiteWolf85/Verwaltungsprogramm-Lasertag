@@ -102,10 +102,10 @@ public class VestTest {
     @Test
     public void calculateRatio() throws Exception {
         Vest vest12 = new Vest();
-        vest12.setHits(25);
-        vest12.setHitsby(10);
+        vest12.setHits(0);
+        vest12.setHitsby(0);
         vest12.calculateRatio();
-        assertEquals(71.4, vest12.getRatio(), 1);
+        assertEquals(0.1, vest12.getRatio(), 1);
     }
 
 }

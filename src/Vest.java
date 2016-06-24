@@ -52,12 +52,12 @@ public class Vest implements VestInterface {
 
 
     public void randomHits() {
-        this.hits = (int) (Math.random() * 10 + 1);
+        this.hits = (int) (Math.random() * 10);
     }
 
 
     public void randomHitsby() {
-        this.hitsby = (int) (Math.random() * 10 + 1);
+        this.hitsby = (int) (Math.random() * 10);
     }
 
 
@@ -67,7 +67,12 @@ public class Vest implements VestInterface {
 
 
     public void calculateRatio() {
-        this.ratio = (this.hits * 100 / (this.hits + this.hitsby));
+        if (this.hits == 0 && this.hitsby == 0) {
+            this.ratio = 0;
+        }
+        else {
+            this.ratio = (this.hits * 100 / (this.hits + this.hitsby));
+        }
     }
 
 
