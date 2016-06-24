@@ -52,12 +52,12 @@ public class Vest implements VestInterface {
 
 
     public void randomHits() {
-        this.hits = (int) (Math.random() * 10);
+        this.hits = (int) (Math.random() * 10 + 1);
     }
 
 
     public void randomHitsby() {
-        this.hitsby = (int) (Math.random() * 10);
+        this.hitsby = (int) (Math.random() * 10 + 1);
     }
 
 
