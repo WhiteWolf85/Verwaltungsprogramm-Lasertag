@@ -95,12 +95,8 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Summiert den Score der einzelnen Spieler des Teams für das jeweilige Spiel auf
-    public int sumScore() {
-        //For Schleife für 6 Westen
-        for (int i = 0; i <= 5; i++) {
-            this.teamScore += spieler[i].getScore();
-        }
-        return this.teamScore;
+    public void sumScore(int score) {
+            this.teamScore += score;
     }
 
     //Anzahl der Gespielten Spiele des jeweiligen Teams
