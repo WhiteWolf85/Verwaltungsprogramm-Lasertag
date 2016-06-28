@@ -98,7 +98,7 @@ public class TeamTest {
         for (int i = 0; i < players.length; i++){
             players[i] = team1.getSpieler()[i];
         }*/
-        team1.sumScore();
+        team1.sumScore(326);
         assertEquals("Score = 500", team1.getTeamScore(),326);
     }
 

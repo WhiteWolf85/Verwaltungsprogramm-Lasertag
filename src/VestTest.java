@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -6,6 +7,23 @@ import static org.junit.Assert.*;
  * Created by anna on 20.06.16.
  */
 public class VestTest {
+
+    @Before
+    public void startTest() {
+        Main.setGlobalValues();
+        Vest v1=new Vest();
+        Vest v2=new Vest();
+        Vest v3=new Vest();
+        Vest v4=new Vest();
+        Vest v5=new Vest();
+        Vest v6=new Vest();
+        Vest v7=new Vest();
+        Vest v8=new Vest();
+        Vest v9=new Vest();
+        Vest v10=new Vest();
+        Vest v11=new Vest();
+        Vest v12=new Vest();
+    }
 
     @Test
     public void getVestNumber() throws Exception {
@@ -84,10 +102,10 @@ public class VestTest {
     @Test
     public void calculateRatio() throws Exception {
         Vest vest12 = new Vest();
-        vest12.setHits(25);
-        vest12.setHitsby(10);
+        vest12.setHits(0);
+        vest12.setHitsby(0);
         vest12.calculateRatio();
-        assertEquals(71.4, vest12.getRatio(), 1);
+        assertEquals(0.1, vest12.getRatio(), 1);
     }
 
 }

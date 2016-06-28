@@ -4,8 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.GridPane;
+
 
 /**
  * Created by Tobi on 21.06.2016.
@@ -38,12 +37,6 @@ public class SpielerController {
 
     public void initialize(){
 
-        //Spieler Tobias = new Spieler("Tobias", 19, "Ersatzbankhocker", null, null, "verletzt");
-        //Spieler Anna = new Spieler("Anna", 25, "Bloody Mary", null, "Runner", "aktiv");
-        //Spieler Tom = new Spieler("Tom", 20, "Reitermaniac", null, "Runner", "aktiv");
-        //Spieler Franz = new Spieler("Franz", 30, "White Wolf", null, "Mittelfeld", "aktiv");
-
-
         ObservableList<String> playerNames=FXCollections.observableArrayList();
         for(Spieler val:Main.globalPlayers){
             playerNames.add(val.getNickName());
@@ -55,7 +48,7 @@ public class SpielerController {
 
     public void reactToButtonClick(ActionEvent Event){
 
-        String result=PlayerList.getSelectionModel().getSelectedItem();;
+        String result=PlayerList.getSelectionModel().getSelectedItem();
         for(Spieler val:Main.globalPlayers){
             if(result.equals(val.getNickName())){
                 label0.setText(val.getName());
@@ -69,7 +62,5 @@ public class SpielerController {
                 label8.setText(Float.toString(val.getRatio()));
             }
         }
-
-
     }
 }
