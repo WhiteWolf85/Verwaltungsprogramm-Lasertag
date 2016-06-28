@@ -1,10 +1,6 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.SplitPane;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -24,6 +20,8 @@ public class Main extends Application {
     public static ArrayList<Team> globalTeams;
     public static ArrayList<Vest> globalVests;
 
+
+    //Initialisiere Root BorderPane und weise dem linken Border das Menü und dem rechten die match.fxml zu
     @Override
     public void start(Stage primaryStage) throws Exception{
 
@@ -47,12 +45,15 @@ public class Main extends Application {
 
     }
 
+    //Setup globale Array Listen
     public static void setGlobalValues(){
         globalPlayers=new ArrayList<Spieler>();
         globalTeams=new ArrayList<Team>();
         globalVests=new ArrayList<Vest>();
     }
 
+
+    //Initialisiere Testwerte
     public void initialValues(){
         Team t1=new Team("Beamforce ONE");
         Team t2=new Team("BTB");

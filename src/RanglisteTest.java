@@ -2,7 +2,8 @@ import org.junit.Before;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Created by franz on 18.06.16.
@@ -16,7 +17,6 @@ public class RanglisteTest {
     Spieler reitermaniac;
     Spieler pg;
     Spieler tine;
-    Rangliste sort;
 
     @Before
     public void startTest(){
@@ -26,23 +26,22 @@ public class RanglisteTest {
         beamforce = new Team("Beamforce");
         btb = new Team("BTB");
         whiteWolf = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
-        bloodyMary = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
-        reitermaniac=new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
-        pg = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
-        tine = new Spieler("Franz",30,"WhiteWolf","Mittelfeld","aktiv");
-        sort=new Rangliste();
-
+        bloodyMary = new Spieler("Anna",20,"BloodyMary","Mittelfeld","aktiv");
+        reitermaniac=new Spieler("Tom",20,"Reitermaniac","Angriff","aktiv");
+        pg = new Spieler("PG",23,"PG","Angriff","aktiv");
+        tine = new Spieler("Tine",21,"Tine","Mittelfeld","aktiv");
 
         beamforce.setTeamName("Beamforce ONE");
         btb.setTeamName("BTB");
 
+        whiteWolf.updateScore(9001);
+        bloodyMary.updateScore(200);
+        reitermaniac.updateScore(300);
+
+        pg.updateScore(1000);
+        tine.updateScore(900);
 
 
-        //beamforce.addToTeam(whiteWolf,beamforce);
-        //beamforce.addToTeam(bloodyMary,beamforce);
-        //beamforce.addToTeam(reitermaniac,beamforce);
-        //btb.addToTeam(pg,btb);
-        //btb.addToTeam(tine,btb);
     }
 
     @org.junit.Test
@@ -62,11 +61,11 @@ public class RanglisteTest {
         list2.add(pg);
         list2.add(tine);
 
-        //ArrayList<Spieler> sortedList=(ArrayList<Spieler>)sort.getSortedList(list1);
+        ArrayList<Spieler> sortedList=(ArrayList<Spieler>)Rangliste.getSortedList(list1);
 
-        //assertEquals("Erwartet White Wolf",playerList.get(0),sortedList.get(0));
-        //assertEquals("Erwartet Reitermaniac",playerList.get(2),sortedList.get(1));
-       // assertEquals("Erwartet BloodyMary",playerList.get(1),sortedList.get(2));
+        assertEquals("Erwartet White Wolf",playerList.get(0),sortedList.get(0));
+        assertEquals("Erwartet Reitermaniac",playerList.get(2),sortedList.get(1));
+        assertEquals("Erwartet BloodyMary",playerList.get(1),sortedList.get(2));
 
     }
 
@@ -88,11 +87,11 @@ public class RanglisteTest {
         list2.add(pg);
         list2.add(tine);
 
-       // ArrayList<Spieler> sortedList=(ArrayList<Spieler>)sort.getSortedList(list1,false);
+        ArrayList<Spieler> sortedList=(ArrayList<Spieler>)Rangliste.getSortedList(list1,false);
 
-       // assertEquals("Erwartet White Wolf",playerList.get(0),sortedList.get(2));
-       // assertEquals("Erwartet Reitermaniac",playerList.get(2),sortedList.get(1));
-       // assertEquals("Erwartet BloodyMary",playerList.get(1),sortedList.get(0));
+        assertEquals("Erwartet White Wolf",playerList.get(0),sortedList.get(2));
+        assertEquals("Erwartet Reitermaniac",playerList.get(2),sortedList.get(1));
+        assertEquals("Erwartet BloodyMary",playerList.get(1),sortedList.get(0));
 
     }
 
@@ -108,10 +107,10 @@ public class RanglisteTest {
         playerList.add(btb);
 
 
-       // ArrayList<Team> sortedList=(ArrayList<Team>)sort.getSortedList(list1);
+        ArrayList<Team> sortedList=(ArrayList<Team>)Rangliste.getSortedList(list1);
 
-       // assertEquals("Erwartet beamforce",playerList.get(0),sortedList.get(0));
-       // assertEquals("Erwartet btb",playerList.get(1),sortedList.get(1));
+        assertEquals("Erwartet beamforce",playerList.get(0),sortedList.get(0));
+        assertEquals("Erwartet btb",playerList.get(1),sortedList.get(1));
 
     }
 
@@ -127,10 +126,10 @@ public class RanglisteTest {
         playerList.add(btb);
 
 
-        //ArrayList<Team> sortedList=(ArrayList<Team>)sort.getSortedList(list1,false);
+        ArrayList<Team> sortedList=(ArrayList<Team>)Rangliste.getSortedList(list1,false);
 
-        //assertEquals("Erwartet beamforce",playerList.get(0),sortedList.get(1));
-        //assertEquals("Erwartet btb",playerList.get(1),sortedList.get(0));
+        assertEquals("Erwartet beamforce",playerList.get(0),sortedList.get(1));
+        assertEquals("Erwartet btb",playerList.get(1),sortedList.get(0));
 
     }
 

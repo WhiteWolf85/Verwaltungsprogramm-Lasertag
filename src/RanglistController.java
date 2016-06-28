@@ -19,8 +19,6 @@ public class RanglistController {
     @FXML
     private TableColumn<Spieler,String> player, playerScore;
 
-    private Rangliste sort=new Rangliste();
-
     public void initialize(){
         this.fillList();
     }
@@ -32,7 +30,7 @@ public class RanglistController {
             teamList.add(var);
         }
 
-        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(sort.getSortedList(teamList));
+        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(Rangliste.getSortedList(teamList));
 
         teamname.setCellValueFactory(new PropertyValueFactory<Team,String>("teamName"));
         teamscore.setCellValueFactory(new PropertyValueFactory<Team,String>("teamScore"));
@@ -50,7 +48,7 @@ public class RanglistController {
             playerList.add(var);
         }
 
-        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(sort.getSortedList(playerList));
+        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(Rangliste.getSortedList(playerList));
 
         player.setCellValueFactory(new PropertyValueFactory<Spieler,String>("nickName"));
         playerScore.setCellValueFactory(new PropertyValueFactory<Spieler,String>("score"));
@@ -66,9 +64,8 @@ public class RanglistController {
             playerList.add(var);
         }
 
-        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(sort.getSortedList(playerList));
+        ObservableList<? extends Sortable> ol= FXCollections.observableArrayList(Rangliste.getSortedList(playerList));
 
-        //ObservableList<Spieler> ol= FXCollections.observableArrayList(Main.globalPlayers);
         player.setCellValueFactory(new PropertyValueFactory<Spieler,String>("nickName"));
         playerScore.setCellValueFactory(new PropertyValueFactory<Spieler,String>("score"));
         listPlayer.setItems(ol);
