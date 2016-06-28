@@ -28,6 +28,7 @@ public class MatchController{
     }
 
     private void fillDropDown(Team previous1,Team previous2){
+        fa
         team1.getItems().clear();
         team2.getItems().clear();
         team1.setItems(FXCollections.observableArrayList(Main.globalTeams));
