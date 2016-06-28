@@ -100,8 +100,8 @@ public class Team implements TeamInterface, Sortable {
     }
 
     //Anzahl der Gespielten Spiele des jeweiligen Teams
-    public int gamesPlayed(Team team) {
-        return team.gameCounter++;
+    public void gamesPlayed() {
+         this.gameCounter++;
     }
 
     public String getTeamName() {

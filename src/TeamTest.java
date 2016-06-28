@@ -106,7 +106,7 @@ public class TeamTest {
     public void testGamesPlayed() throws Exception {
         //Simulation für 3 gespielte Spiele
         for (int i = 0; i < 3; i++){
-            team1.gamesPlayed(team1);
+            team1.gamesPlayed();
         }
         assertEquals("Erwartet: 3", team1.getGameCounter(),3);
     }

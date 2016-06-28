@@ -94,6 +94,8 @@ public class MatchController{
                 resultTeam2.setText(Integer.toString(result));
                 team2.sumScore(result);
                 games.setText(Integer.toString(playedMatches));
+            team1.gamesPlayed();
+            team2.gamesPlayed();
             this.fillDropDown(team1,team2);
         }else{
             //gleiches Team ausgewählt

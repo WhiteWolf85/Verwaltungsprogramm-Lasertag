@@ -17,7 +17,7 @@ interface TeamInterface {
     void removeTeam(Team team);
     void addToTeam(Spieler spieler);
     void removeFromTeam(Spieler spieler, Team team);
-    int gamesPlayed(Team team);
+    void gamesPlayed();
     String toString();
 
     //Getter
